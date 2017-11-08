@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css" />
+<link rel="stylesheet" type="text/css" href="../css/shopStyle.css" />
+<style type="text/css">
+body {
+	background: url('../images/shopBj4.jpg') no-repeat;
+	background-size: 100%;
+}
+.StaffLogin {min-height: 400px;}
+</style>
+</head>
+<body>
+	<!-- ibookway-员工登入 -->
+	<div class="StaffLogin">
+		<!-- text -->
+		<p class="text">员工登入</p>
+		<!-- ibookway -->
+		<p class="ibookway"><img src="../images/ibookway.png" /></p>
+		<!-- Login -->
+		<div class="Login">
+			<!-- 账号 -->
+			<div class="account_number">
+				<p class="zh">账号</p>
+				<input id="account" type="text" name="" placeholder="请输入账号" />
+				<p class="Prompt">请输入账号</p>
+			</div>
+			<!-- 密码 -->
+			<div class="Password">
+				<p class="mm">密码</p>
+				<input id="password" type="password" name="" placeholder="请输入密码"/>
+				<p class="Prompt">请输入密码</p>
+			</div>
+			<div id="con"></div>
+			<!-- 注册/忘记密码 -->
+			<div class="register">
+				<a class="zc" href="#">注册</a>
+				<span>/</span>
+				<a class="wjmm" href="#">忘记密码</a>
+			</div>
+			<!-- 确认登入 hover确认样式 -->
+			<button class="ConfirmLogin">确认登入</button>
+			<!-- <a id="accountStatus" class="ConfirmLogin hover" href="#">确认登入</a> -->
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+// jquery实现
+// $(document).ready(function(){
+  // $("#account").blur(function(event) {
+  //   $.ajax({
+  //     type:"GET",
+  //     url:"checkAccount.php?account="+$("#account").val(),
+  //     dataTypes:"text",
+  //     success:function(msg){
+  //       $("#accountStatus").html(msg);
+  //     },
+  //     error:function(jqXHR) {
+  //       alert("账号发生错误！")
+  //     },
+  //   });
+  // });
+</script>
+</html>

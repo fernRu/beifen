@@ -1,0 +1,92 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, img {
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	/*font: 1em "苹方","PingFang";*/
+	color: #ffffff;
+}
+body {background: #ffffff;}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #ffffff;-webkit-tap-highlight-color:transparent;}
+i {font-style: normal;}
+img {border: 0;}
+/*ItmIndex*/
+html{-ms-touch-action: none;}
+.ItmIndex {
+	width: 375px;
+	height: 603px;
+	/*width: 384px;
+	height: 605px;*/
+}
+/*广告位*/
+.adw {}
+.adw img {width: 100%;display: block;}
+/*列表*/
+.ItmList {background: #425b9d;}
+/*购买&搜索&余额*/
+/*gm_ss*/
+.gm_ss {background: #c0997c;height: 218px;}
+.gm_ss .gm_left {float: left;width: 58%;}
+.gm_left img {display: block;width: 114px;margin-top: 60px;}
+.gm_left span {display: block;padding-left: 20px;font-size: 1.5em;margin-top: 12px;}
+.gm_ss .ss_right,.hs_left {float: right;width: 42%;background: #27123b;height: 218px;overflow: hidden;}
+.ss_right .ss_top {display: block;height: 156px;overflow: hidden;}
+.ss_top img {display: block;width: 63px;margin-top: 46px;}
+.ss_top span,.hs_js .js span {display: block;text-align: center;font-size: 1.5em;}
+.ss_right .balance {
+	display: block;background: #ed6062;height: 62px;
+	text-align: center;
+	font-size: 1.24em;
+	line-height: 62px;
+	overflow: hidden;
+}
+/*帮助&还书&客服&借书*/
+/*hs_js*/
+.hs_js {height: 218px;}
+/*hs_left*/
+.hs_js .hs_left {float: left;background: #41193c;}
+.hs_left .bz {
+	display: block;
+	height: 62px;
+	background: #960063;
+	text-align: center;
+	overflow: hidden;
+}
+.hs_left .bz span {
+	font-size: 1.5em;
+	display: inline-block;
+	line-height: 62px;
+	background: url('../images/help.png') no-repeat left top 16px;
+	background-size: 30px;
+	padding-left: 40px;
+}
+.hs_kf {height: 156px;overflow: hidden;}
+.hs_kf .hs {float: left;width: 72%;}
+.hs_kf .hs span {
+	font-size: 2.8em;
+	padding: 0 20px;
+	display: block;
+	height: 78px;
+	line-height: 78px;
+	text-align: left;
+	overflow: hidden;
+}
+.hs_kf .hs .books {text-align: right;}
+.hs_kf .kf {
+	float: right;
+	width: 28%;
+	background: #151426;
+	height: 156px;
+	font-size: 1.14em;
+	text-align: center;
+}
+.hs_kf .kf span {
+	display: block;
+	padding-top: 30px;
+	width: 20px;
+	line-height: 50px;
+}
+.hs_js .js {float: right;width: 58%;height: 218px;overflow: hidden;}
+.hs_js .js img {width: 110px;display: block;margin-top: 61px;}
+.hs_js .js span {text-align: right;padding-right: 20px;margin-top: 20px;}

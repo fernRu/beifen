@@ -1,0 +1,87 @@
+/*背景颜色*/
+body {background: #f2f2f2;}
+/*head*/
+.nav {background: #ffffff;}
+/*add_notes*/
+.add_notes {
+	background: #ffffff;
+	height: 30px;
+	margin-top: 5px;
+	position: relative;
+	padding: 0 20px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.add_notes .time {float: left;height: 30px;overflow: hidden;}
+.time span {line-height: 32px;float: left;}
+.time b {
+	float: left;
+	width: 10px;
+	height: 18px;
+	margin: 6px 0 0 6px;
+	background: url('../images/time.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+.time b.down {
+	background: url('../images/time.png') 0 -18px no-repeat;
+	background-size: 100%;
+}
+.add_notes .tjbj {width: 160px;text-align: center;position: relative;}
+.tjbj p {
+	height: 30px;
+	line-height: 31px;
+	width: 116px;
+	background: url('../images/xjt2.png') no-repeat right;
+	background-size: 11px 6px;
+	overflow: hidden;
+}
+.tjbj ul {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+	padding: 4px 0;
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+	z-index: 999;
+}
+.tjbj ul li {line-height: 24px;}
+.add_notes .search {
+	position: absolute;
+	right: 24px;
+	width: 16px;
+	top: 6px;
+}
+.search img {display: block;width: 100%;}
+/*notesList*/
+.notesList {}
+.notesList ul li {
+	position: relative;
+	background: #ffffff;
+	padding: 10px 84px 10px 10px;
+	min-height: 66px;
+	margin-bottom: 5px;
+}
+.notesList li .Lleft {display: block;padding-left: 74px;}
+.Lleft .Limg {position: absolute;left: 10px;width: 66px;}
+.con .Title {word-break: break-all;padding-bottom: 4px;}
+.con .jsrq,.con .xgrq {
+	color: #979797;
+	font-size: 0.76em;
+	line-height: 20px;
+}
+.con p span {color: #979797;}
+.notesList li .Rleft {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	line-height: 26px;
+	display: block;
+	color: #00cc99;
+}
+/*修改笔记*/
+
+
+
+
+

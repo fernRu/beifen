@@ -1,0 +1,223 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, input, img,button,i{
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	color: #222222;
+	/*font-family: Helvetica,"PingFang SC";*/
+}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #222222;-webkit-tap-highlight-color:transparent;}
+i {font-style: normal;}
+img {border: 0;}
+.clear {clear: both;}
+input:focus, textarea:focus, select:focus { outline: none;}
+/*公用隐藏*/
+.public,.header .search input,.machineBorrow .Location span {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+/*header*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 38px;
+	background: #ffffff;
+	z-index: 999;
+	padding: 0;
+	font-size: 1.0em;
+}
+/*xzcs*/
+.xzcs .switch {
+	position: absolute;
+	left: 6px;
+	top: 5px;
+	height: 30px;
+}
+.switch .value {
+	display: block;
+	background: #ffffff;
+	color: #323232;
+	font-size: 1.06em;
+	border: 0;
+	height: 30px;
+	line-height: 30px;
+	padding-right: 14px;
+	background: url("../images/selxjt.png") no-repeat right top 14px transparent;
+	background-size: 11px;
+}
+.xzcs .xz {
+	position: absolute;
+	left: 0;
+	top: 33px;
+	width: 100px;
+	padding: 6px 0;
+	background: #ffffff;
+}
+.xzcs .xz a {display: block;text-align: center;line-height: 30px;}
+/**/
+.header .search {
+	margin: 7px 66px 0;
+	background: url('../images/searchH.png') no-repeat top 3px left 10px;
+	background-size: 18px;
+	border-radius: 4px;
+	height: 24px;
+	padding: 0 10px 0 35px;
+	border: 1px solid #d9d9d9;
+	overflow: hidden;
+}
+.header .search input {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: 24px;
+	font-size: 0.84em;
+	line-height: normal;
+}
+/**/
+.header .personal {
+	position: absolute;
+	right: 0;
+	top: 4px;
+	width: 66px;
+	text-align: center;
+}
+.personal a {display: block;}
+.personal b {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url('../images/yhzx.png') no-repeat;
+	background-size: 30px;
+}
+/*wrapperDw为定位的外框*/
+.wrapperDw {
+	position: absolute;
+	z-index: 99;
+	left: 0;
+	top: 38px;
+	bottom: 50px;
+	width: 100%;
+}
+/**/
+.wrapperDw .more{
+	display: block;
+	height: 30px;
+	padding-left: 50%;
+	color: #979797;
+	padding-top: 6px;
+	text-align: center;
+	vertical-align:middel;
+	background: #f2f2f2;
+}
+.wrapperDw .more p {height: 30px;width: 100px;}
+.wrapperDw .pull_icon{
+	float: left;
+	vertical-align: middel;
+	width: 20px;
+	height: 20px;
+	margin: 4px 0 0 -40px;
+	background: url('../images/pulldown.png') no-repeat;
+	background-size: 20px;
+	transition: all .5s;
+}
+.wrapperDw .more span{
+	float: left;
+	vertical-align:middel;
+	height: 20px;
+	margin-left: -20px;
+	font-size: 0.9em;
+	padding-left: .5rem;
+	line-height: 24px;
+}
+.wrapperDw .more .flip{transform: rotate(180deg);margin-top: 0;}
+/*contentMiddle*/
+.CLlink {}
+.contentMiddle,.machineBorrow,.ljgh .content {position: relative;z-index: 99;margin: 38px 0 80px;}
+/*footer*/
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	border-top:1px solid #e3e3e3;
+	background: #ffffff;
+	z-index: 999;
+}
+.footer li {float: left;width: 20%;}
+.footer li a {display: block;text-align: center;padding-top: 2px;}
+.footer a span {display: block;color: #878787;font-size: 0.7em;line-height: 14px;padding-top: 2px;}
+.footer a b {
+	display: block;
+	width: 30px;
+	height: 26px;
+	background: url('../images/inco_index.png') 6px -126px no-repeat;
+	background-size: 26px;
+}
+.footer a.dd_borrow b {background-position: 3px -153px;}
+.footer a.jq_borrow b {background-position: 5px -179px;}
+.footer a.immediate_return b {background-position: 2px -205px;}
+.footer a.sys {
+	position: relative;
+	top: -8px;
+	height: 52px;
+	width: 52px;
+	padding-top: 0;
+}
+.footer a.sys b {
+	height: 52px;
+	width: 52px;
+	background: url('../images/sm.png') no-repeat;
+	background-size: 52px;
+}
+.footer a.sys span {padding-top: 0;font-size: 0.72em;}
+/*ftSel*/
+.footer .ftSel a span {color: #00cc99;}
+.footer .ftSel a b {background-position: 6px -22px;}
+.footer .ftSel a.dd_borrow b {background-position: 3px -49px;}
+.footer .ftSel a.jq_borrow b {background-position: 5px -75px;}
+.footer .ftSel a.immediate_return b {background-position: 2px -101px;}
+/*机器借machineBorrow*/
+/*loc_list*/
+.loc_list {}
+.loc_list li {
+	/*height: 50px;*/
+	border-top: 5px solid #ebebeb;
+	padding: 14px 12px 0;
+	background: #ffffff;
+}
+/*loc_list*/
+.loc_list .shop,.loc_list .Location {
+	position: relative;
+	display: block;
+	padding-left: 32px;
+}
+.loc_list .shop {padding-bottom: 10px;}
+.loc_list a img {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 22px;
+	height: 22px;
+}
+.loc_list .shop span {line-height: 24px;word-break: break-all;}
+.loc_list .Location {height: 35px;border-top: 1px solid #e5e5e5;overflow: hidden;}
+.machineBorrow .Location span {
+	color: #979797;
+	float: left;
+	width: 74%;
+	line-height: 35px;
+	font-size: 0.75em;
+}
+.Location .distance {
+	float: right;
+	color: #979797;
+	font-size: 0.63em;
+	line-height: 35px;
+	text-align: right;
+}
+.loc_list a.Location img{width: 20px;height: 16px;top: 8px;}
+/*ljgh*/
+.ljgh .contList {padding-top: 5px;}
+.ljgh .contList li {margin:0 0 5px;}
+/*ClerkList*/

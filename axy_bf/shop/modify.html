@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" href="css/ydui.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" type="text/css" href="css/city-picker.css">
+<!-- <meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection"> -->
+<script src="js/ydui_003.js"></script>
+
+</head>
+<body>
+	<!-- ibookway-修改地址2 -->
+	<div class="navDd">
+		<a class="return" href="#"><img src="../images/arrow3.png" /><span>返回上页</span></a>
+		<!--  个人中心-->		
+		<a class="grzx" href="#">个人中心</a>
+	</div><!-- nav-end -->
+	<!-- 订单内容-->
+	<div class="modify">
+		<!-- 姓名&电话 -->
+		<div class="xm_dh">
+			<p class="name">
+				<span>姓名</span>
+				<input type="text" name="" placeholder="输入名字" />
+			</p>
+			<p class="number">
+				<span>电话</span>
+				<input type="text" name="" placeholder="输入手机号" />
+			</p>
+		</div>
+		<!-- 地址 -->
+		<div class="mod_address">
+			<section class="g-scrollview">
+				<div class="m-celltitle">所在地区：</div>
+				<div class="m-cell">
+					<div class="cell-item">
+						<!-- <div class="cell-left">所在地区：</div> -->
+						<div class="cell-right cell-arrow">
+							<input class="cell-input" readonly="readonly" id="J_Address" placeholder="请选择收货地址" type="text">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 详细地址 -->
+			<div class="doorplate">
+				<span>详细地址</span>
+				<input type="text" name="" placeholder="小区、街道、门牌号" />
+			</div>
+			<!-- 设置默认地址 -->
+			<div class="default">
+				<input type="checkbox" value="0" class="check_view_state"
+				id="checkbox-1">
+				<label for="checkbox-1">设置默认地址</label>
+			</div>
+		</div>
+		<!-- button -->
+		<button class="bcdz">保存地址</button>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ydui_002.js"></script>
+<script type="text/javascript" src="js/ydui.js"></script>
+<script type="text/javascript">
+/**
+ * 默认调用
+ */
+!function () {
+	var $target = $('#J_Address');
+
+	$target.citySelect();
+
+	$target.on('click', function (event) {
+		event.stopPropagation();
+		$target.citySelect('open');
+	});
+
+	$target.on('done.ydui.cityselect', function (ret) {
+		$(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+	});
+}();
+/**
+ * 设置默认值
+ */
+// !function () {
+// 	var $target = $('#J_Address2');
+
+// 	$target.citySelect({
+// 		provance: '新疆',
+// 		city: '乌鲁木齐市',
+// 		area: '天山区'
+// 	});
+
+// 	$target.on('click', function (event) {
+// 		event.stopPropagation();
+// 		$target.citySelect('open');
+// 	});
+
+// 	$target.on('done.ydui.cityselect', function (ret) {
+// 		$(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+ // }();
+</script>
+</html>

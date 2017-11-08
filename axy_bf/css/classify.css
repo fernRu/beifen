@@ -1,0 +1,189 @@
+/*公用隐藏*/
+.navClass span,.Location p {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+.LCcon1 .synopsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*分类classify*/
+.classify {}
+/*.navClass*/
+.navClass {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 42px;
+	background: #00cc99;
+	padding: 0 12px;
+	overflow: hidden;
+	z-index: 1000;
+}
+.navClass a {float: left;width: 14px;margin-top: 10px;}
+.navClass a img {display: block;width:100%;}
+.navClass span {
+	display: block;
+	color: #ffffff;
+	line-height: 43px;
+	padding-right: 14px;
+	width: 60%;
+	margin: 0 auto;
+}
+/*地址*/
+.Location {
+	position: fixed;
+	left: 0;
+	top: 42px;
+	width: 100%;
+	height: 34px;
+	background: #ffffff;
+	overflow: hidden;
+	z-index: 1000;
+}
+.Location img {
+	position: absolute;
+	left: 16px;
+	top: 11px;
+	width: 10px;
+	height: 12px;
+}
+.Location p {font-size: 0.75em;line-height: 34px;padding: 0 16px 0 40px;}
+/*搜索*/
+.search {
+	position: fixed;
+	top: 76px;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	background: #f2f2f2;
+	overflow: hidden;
+	z-index: 1000;
+}
+.search .bjkS {
+	background: #c2c2c2;
+	height: 26px;
+	margin: 10px 16px 0 82px;
+	border-radius: 4px;
+	display: block;
+}
+input::-webkit-input-placeholder {color:#ffffff;}
+input:-moz-placeholder {color:#ffffff;}
+input::-moz-placeholder {color:#ffffff;}
+input:-ms-input-placeholder {color:#ffffff;}
+.search .bjkS input {
+	border: 0;
+	color: #ffffff;
+	height: 26px;
+	line-height: 27px;
+	background: url('../images/searchB.png') no-repeat left #c2c2c2;
+	background-size: 17px;
+	padding-left: 20px;
+	width: 130px;
+	display: block;
+	text-align: left;
+	/*cursor:not-allowed;*/
+	overflow: hidden;
+}
+/*分类列表*/
+.ClassList {
+	margin-top: 122px;
+	position: relative;
+	background: #f2f2f2;
+	padding-left: 40%;
+	border-top: 1px solid #e2e2e2;
+	z-index: 100;
+}
+.ClassList .screen {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40%;
+	background: #f2f2f2;
+}
+.screen li {
+	color: #626262;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ffffff;
+	text-align: center;
+}
+.screen li.sel {color: #ffffff;background: #00cc99;}
+.ClassList .content {width: 100%;background: #ffffff;}
+.content .list a {
+	display: block;
+	padding-left: 30px;
+	height: 46px;
+	line-height: 46px;
+	border-top: 1px solid #f2f2f2;
+}
+/*ListCon*/
+.ListCon {position: relative;margin-top: 122px;z-index: 100;}
+.ListCon .category {
+	text-align: center;
+	font-size: 1.12em;
+	margin-top: 10px;
+	color: #00cc99;
+	line-height: 30px;
+}
+/*LCcon1*/
+.LCcon1 {}
+.LCcon1 li{}
+.LCcon1 li a{position: relative;display: block;min-height: 124px;padding: 14px 12px 0 124px;}
+.LCcon1 .Cimg {
+	position: absolute;
+	display: block;
+	left: 10px;
+	width: 110px;
+	height: 110px;
+	overflow: hidden;
+}
+.LCcon1 p {
+	color: #979797;
+	font-size: 0.94em;
+	line-height: 20px;
+	word-break: break-all;
+}
+.LCcon1 p span {color: #979797;}
+.LCcon1 .author {padding: 4px 0;}
+.LCcon1 .name {font-size: 1.12em;color: #222222;}
+.LCcon1 .Cright {border-bottom: 1px solid #e3e3e3;padding: 0 3px 14px;}
+/*LCcon2*/
+.LCcon2 {padding: 14px 0 20px;display: table-cell;}
+.LCcon2 li {float: left;width: 33.3%;padding-top:14px;}
+.LCcon2 li a {
+	position: relative;
+	width: 100%;
+	display: block;
+	height: 0;
+	padding-bottom: 124%;
+	overflow: hidden;
+}
+.LCcon2 a span {
+	display: block;
+	width: 90%;
+	height: 0;
+	padding-bottom: 90%;
+	overflow: hidden;
+}
+.LCcon2 span img {
+	display: block;
+	width: 100%;
+}
+.LCcon2 a p {width: 80%;word-break: break-all;font-size: 0.76em;text-align: center;line-height: 16px;margin-top: 6px;}
+.LCcon2 a p {
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*分类选择*/
+.flxz {position: absolute;left: 16px;top: 12px;height: 20px;overflow: hidden;}
+.flxz a {display: block;}
+.flxz a img {width: 18px;float: left;margin-top: 1px;}
+.flxz a span {color: #000000;float: left;line-height: 20px;margin-left: 4px;}

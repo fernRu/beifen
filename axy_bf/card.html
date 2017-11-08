@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<link rel="stylesheet" type="text/css" href="css/card.css">
+<title>ibookway-card</title>
+</head>
+<body>
+	<!-- 爱喜悦-月卡 -->
+	<div class="card">
+		<div class="Cnav">
+			<a class="return" href="#">
+				<img src="images/arrow.png" />
+				<span>返回上页</span>
+			</a>
+			<a class="grzx" href="#">个人中心</a>
+		</div>
+		<div class="card_img">
+			<a href="javascript:void(0);">
+				<span class="dayNum"><b>30</b>天</span>
+				<img src="images/Card.png" />
+			</a>
+		</div>
+	</div>
+	<!-- 爱喜悦-月卡-购买 -->
+	<div class="cardGm" style="display: none;">
+		<div class="Cnav">
+			<a class="return" href="javascript:void(0);">
+				<img src="images/arrow.png" />
+				<span>返回上页</span>
+			</a>
+		</div>
+		<!--  -->
+		<div class="card_xq">
+			<div class="xqtp">
+				<span class="dayNum"><b>30</b>天</span>
+				<img src="images/card2.jpg" />
+			</div>
+			<!-- 立即购买 -->
+			<div class="ljgm">
+				<span class="price">¥18/月</span>
+				<a class="gm" href="#">立即购买</a>
+			</div>
+		</div>
+		<!-- 说明 -->
+		<div class="explain">
+			<p><span>·</span>月卡生效期间，笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻</p>
+			<p><span>·</span>月卡生效期间，笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻</p>
+			<p><span>·</span>月卡生效期间，笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻</p>
+			<p><span>·</span>月卡生效期间，笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	// 点击购买月卡
+	$('.card_img a').click(function(){
+		$('.card').hide();
+		$('.cardGm').show();
+	});
+	$('.cardGm .Cnav .return').click(function(){
+		$('.card').show();
+		$('.cardGm').hide();
+	});
+</script>
+</html>

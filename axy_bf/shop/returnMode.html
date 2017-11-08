@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway-弹出框</title>
+<!-- 你把样式放到公共样式里面后，调用弹出框时不用引用public样式了 -->
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/returnMode.css">
+</head>
+<body>
+	<!-- 提示框returnMode -->
+	<div class="returnMode">
+		<div class="tmbj2"></div>
+		<!-- 选择还书方式 -->
+		<div class="hsfs">
+			<div class="rm_txt">
+				<a href="#"><img src="../images/del3.png" /></a>
+				<span>选择还书方式</span>
+			</div>
+			<!-- 到店/机器/快递还书 -->
+			<div class="rmList">
+				<label class="ddhs sel3" for="ddhs">
+					<span class="rm_img"></span>
+					<span>到店还书</span>
+					<input type="radio" checked="checked" name="xuanzhe" id="ddhs" />
+					<i></i>
+				</label>
+				<label class="jqhs" for="jqhs">
+					<span class="rm_img"></span>
+					<span>机器还书</span>
+					<input type="radio" name="xuanzhe" id="jqhs" />
+					<i></i>
+				</label>
+				<label class="kdhs" for="kdhs">
+					<span class="rm_img"></span>
+					<span>快递还书</span>
+					<input type="radio" name="xuanzhe" id="kdhs" />
+					<i></i>
+				</label>
+			</div>
+			<!-- 确认归还 -->
+			<button class="qrgh">确定</button>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	// 选择还书方式
+	$('.returnMode .rmList label').click(function(){
+		$(this).addClass('sel3').siblings().removeClass('sel3');
+	});
+	$('.returnMode .tmbj2').click(function(){
+		$('.returnMode').hide();
+	});
+	$('.returnMode .rm_txt a').click(function(){
+		$('.returnMode').hide();
+	});
+</script>
+</html>

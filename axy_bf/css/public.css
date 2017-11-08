@@ -1,0 +1,27 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, input, img,button,i{
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	/*font: 1em "PingFang SC";*/
+	/*font-size: 1em;
+	font-family: Helvetica,"PingFang SC";*/
+	color: #222222;
+}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #222222;-webkit-tap-highlight-color:transparent;}
+i {font-style: normal;}
+img {border: 0;}
+.clear {clear: both;}
+input:focus, textarea:focus { outline: none;}
+/*公用隐藏*/
+.public {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+/*背景颜色*/
+body {background: #ffffff;}
+/*nav*/
+.nav {height: 44px;padding: 0 10px;text-align: center;overflow: hidden;position: relative;}
+.nav a.return {position: absolute;left: 10px;top: 10px;width: 12px;height: 21px;}
+.nav a.return img,.nav a.partake img, .chat .user img {display: block;width: 100%;}
+.nav a.partake, .Add_friends .nav .send, .chat .user {position: absolute;top: 10px;width: 20px;height: 20px;right: 10px;}
+.nav span{color: #222222;line-height: 44px;font-size: 1.2em;display: block;}
+/*head*/

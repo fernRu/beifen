@@ -1,0 +1,147 @@
+/*公用隐藏*/
+.znsg .Location span,.CLlink li p.store {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+body {background: #f2f2f2;}
+/*zh_zn*/
+.zh_zn {position: relative;z-index: 99;margin: 80px 0 60px;}
+/*bookSel*/
+.bookSel {
+	position: fixed;
+	top: 38px;
+	height: 40px;
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-width: 1px 0px 1px;
+	overflow: hidden;
+	z-index: 99;
+}
+.bookSel li {float: left;width: 50%;text-align: center;}
+.bookSel li a {
+	display: block;
+	line-height: 40px;
+	color: #323232;
+	font-size: 1.13em;
+	overflow: hidden;
+}
+.bookSel li.selTab {
+	background: url('../images/selTab.png') no-repeat bottom;
+	background-size: 54px;
+}
+.bookSel li.selTab a {color: #00cc99;}
+/*CLlink智慧书房*/
+.mescroll{
+	position: fixed;
+	top: 80px;
+	bottom: 50px;
+	height: auto;
+}
+.CLlink li {background: #ffffff;margin-bottom: 5px;}
+.CLlink li a {
+	position: relative;
+	padding: 7px 10px 7px 110px;
+	min-height: 90px;
+	display: block;
+} 
+.CLlink li .img {
+	position: absolute;
+	left: 6px;
+	width: 94px;
+	height: 82px;
+	border-radius: 4px;
+}
+.CLlink li p {font-size: 0.76em;line-height: 18px;word-break: break-all;}
+.CLlink li p.Location {
+	height: 34px;
+	padding-top: 6px;
+	line-height: 18px;
+	font-size: 0.8em;
+	overflow: hidden;
+}
+.CLlink li p.Location span {color: #979797;}
+.CLlink li .km {
+	color: #00cc99;
+	font-size: 0.75em;
+	text-align: right;
+}
+.CLlink li p.store {height: 28px;line-height: 24px;font-size: 1em;}
+.CLlink li .Telephone {
+	margin-left: 110px;
+	border-top: 1px solid #f2f2f2;
+	line-height: 30px;
+	font-size: 0.80em;
+	text-align: right;
+	padding: 7px 10px 5px 0;
+}
+.Telephone span {color: #979797;}
+.Telephone span.time {color: #000000;padding: 0 3px;}
+.CLlink li .Telephone b {color: #979797;}
+.CLlink li a.lxwm {
+	border-top: 0;
+	padding: 0;
+	display: inline-block;
+	min-height: auto;
+	padding-left: 3px;
+	color: #00cc99;
+}
+/*popup*/
+.hide {display: none;}
+.popupT {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../../images/bg.png');
+	z-index: 9999;
+}
+.popupT .pop_bk {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #ffffff;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+}
+.pop_bk .dh {color: #979797;padding: 16px 0;}
+.pop_bk .call,.pop_bk .cancel {font-size: 1.2em;padding: 10px 0;display: block;border-top: 1px solid #f2f2f2;}
+.pop_bk .cancel {border-top: 5px solid #f2f2f2;}
+/*智能书柜znsg*/
+/*znsg*/
+.znsg {}
+.znsg li {
+	margin-bottom: 5px;
+	padding: 14px 12px 0;
+	background: #ffffff;
+}
+/*loc_list*/
+.znsg .shop,.znsg .Location {
+	position: relative;
+	display: block;
+	padding-left: 32px;
+}
+.znsg .shop {padding-bottom: 10px;}
+.znsg a img {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 22px;
+	height: 22px;
+}
+.znsg .shop span {line-height: 24px;word-break: break-all;}
+.znsg .Location {height: 35px;border-top: 1px solid #e5e5e5;overflow: hidden;}
+.znsg .Location span {
+	color: #979797;
+	float: left;
+	width: 74%;
+	line-height: 35px;
+	font-size: 0.75em;
+}
+.Location .distance {
+	float: right;
+	color: #979797;
+	font-size: 0.63em;
+	line-height: 35px;
+	text-align: right;
+}
+.znsg a.Location img{width: 20px;height: 16px;top: 8px;}

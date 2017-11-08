@@ -1,0 +1,92 @@
+body {background: #ffffff;}
+/*看过*/
+.read {}
+/*read_top*/
+.read_top {height: 38px;padding: 0 12px;overflow: hidden;}
+.read_top .return {
+	float: left;
+	width: 12px;
+	margin-top: 9px;
+}
+.read_top .return img {display: block;width: 12px;}
+.read_top .kanguo {
+	display: block;
+	color: #323232;
+	font-size: 1.13em;
+	line-height: 40px;
+	text-align: center;
+	padding-right: 12px;
+}
+/*critique*/
+.critique {border-top: 1px solid #f2f2f2;padding: 0 14px;}
+.critique .c_bt,.critique .c_pj {
+	color: #c2c2c2;
+	font-size: 1.13em;
+	text-align: center;
+	line-height: 30px;
+	padding: 20px 0;
+}
+/*pf*/
+.critique .c_pf {
+	text-align: center;
+	height: 50px;
+	overflow: hidden;
+}
+.critique .c_pf li {
+	display: inline-block;
+	padding: 0 2px;
+	width: 42px;
+	height: 40px;
+	background: url('../images/comment.png') 0 0 no-repeat;
+	background-size: 42px;
+}
+.critique .c_pf li a {
+	display: block;
+	font-size: 0;
+	width: 42px;
+	height: 40px;
+	overflow: hidden;
+}
+.critique .c_pf li.light {
+	width: 42px;
+	height: 40px;
+	background: url('../images/comment.png') 0 -50px no-repeat;
+	background-size: 42px;
+}
+.critique .c_pj {padding: 10px 0;}
+/*c_textarea*/
+.c_textarea {
+	width: 80%;
+	max-width: 306px;
+	border: 1px solid #979797;
+	border-radius: 4px;
+	padding: 14px 16px;
+	height: 110px;
+}
+.c_textarea textarea {
+	width: 100%;
+	border: 0;
+	line-height: 20px;
+	height: 110px;
+	word-break: break-all;
+	padding: 0;
+	margin: 0;
+	resize : none;
+	overflow: auto;
+}
+/*release_btn*/
+.release_btn {
+	margin-top: 20px;
+	display: block;
+	border: 0;
+	background: #00cc99;
+	width: 166px;
+	color: #ffffff;
+	border-radius: 6px;
+	height: 40px;
+	/*line-height: 40px;*/
+	font-size: 1.13em;
+	outline: none;
+	overflow: hidden;
+}
+/**/

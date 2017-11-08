@@ -1,0 +1,47 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, input, img{
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	color: #444444;
+}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #444444;-webkit-tap-highlight-color:transparent;}
+img {border: 0;}
+/*个人信息*/
+body {background: #ffffff;}
+/*nav*/
+.nav {height: 44px;padding: 0 10px;text-align: center;overflow: hidden;position: relative;}
+.nav a.return {position: absolute;left: 10px;top: 10px;width: 12px;height: 21px;}
+.nav a.return img {display: block;width: 100%;}
+.nav span{color: #222222;line-height: 44px;font-size: 1.2em;display: block;}
+.help_centre .nav {border-bottom: 1px solid #979797;}
+/*帮助中心*/
+.help_centre {padding-bottom: 20px;}
+.HelpCom {padding: 0 10px;}
+.HelpCom p {text-align: justify;line-height: 24px;font-size: 0.92em}
+.HelpCom p.bt {
+	font-size: 1.06em;
+	color: #222222;
+	margin-top: 14px;
+	line-height: 30px;
+}
+/*Service*/
+.Service .nav {background: #ffffff;}
+.ServiceCom {width: 250px;border: 1px solid #cfcfcf;margin-top: 70px;padding-bottom: 25px;border-radius: 5px;}
+.ServiceCom .kfdh {
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #222222;
+	margin-top: 6px;
+}
+.ServiceCom .Telephone {height: 34px;padding-top: 6px;text-align: center;}
+.ServiceCom .Telephone a {color: #00c789;font-size: 1.2em;line-height: normal;}
+.Telephone img {display: inline-block;width: 24px;margin-right: 10px;}
+.Prompt {
+	color: #979797;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 0.9em;
+}

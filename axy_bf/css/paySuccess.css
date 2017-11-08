@@ -1,0 +1,33 @@
+/*付款成功*/
+body {background: #f2f2f2;}
+.paySuccess {background: #ffffff;margin: 20px 12px 0;border-radius: 4px;}
+.paySuccess div {padding: 3px 12px;font-size: 0.88em;line-height: 20px;word-break: break-all;}
+.paySuccess div span {color: #979797;}
+.paySuccess .fkcg {font-size: 0.94em;padding-top: 8px;}
+.paySuccess .pay_time,.transaction_amount .state {color: #626262;font-size: 0.75em;}
+.paySuccess .transaction_amount {text-align: center;padding: 6px 0 20px;}
+.transaction_amount .money {font-size: 2.25em;}
+.transaction_amount .money span {color: #222222;}
+.transaction_amount .state {padding-top: 8px;}
+.paySuccess .ddsj {
+	border-top: 1px solid #e3e3e3;
+	padding: 8px 0 2px;
+	margin: 10px 12px 0;
+}
+.paySuccess .jump_bttn {
+	padding: 0;
+	border: 1px solid #00cc99;
+	height: 52px;
+	border-radius:0px 0px 5px 5px;
+	margin-top: 68px;
+	overflow: hidden;
+}
+.jump_bttn a {
+	float: left;
+	line-height: 52px;
+	text-align: center;
+	width: 50%;
+	color: #000000;
+	font-size: 1.13em;
+}
+.jump_bttn a.jxjy {background: #00cc99;color: #ffffff;}

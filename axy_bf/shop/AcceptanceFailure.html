@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css" />
+<link rel="stylesheet" type="text/css" href="../css/shopStyle.css" />
+<style type="text/css">
+body {
+	background: url('../images/shopBj.jpg') no-repeat;
+	background-size: 100%;
+}
+</style>
+</head>
+<body>
+	<!-- ibookway-验收失败 -->
+	<div class="LibraryCode yssb">
+		<!-- nav3 -->
+		<div class="nav3">
+			<a class="Return" href="#">
+				<img src="../images/ljt.png" />
+				<span>返回</span>
+			</a>
+			<a class="grzx" href="#">个人中心</a>
+		</div>
+		<!-- bjk -->
+		<div class="bjk">
+			<!-- 验收失败 -->
+			<div class="jsm">
+				<p class="bt">验收失败</p>
+				<!-- 借书信息 -->
+				<div class="jsxx">
+					<p class="jyr">借阅人：<span>产品王</span></p>
+					<p class="ddh">订单号：<span>1234567890123</span></p>
+					<p class="jsrq">借阅日期：
+						<span class="time">2017-09-11</span>
+						<span class="time2">12:00</span>
+					</p>
+					<p class="jsrq">归还日期：
+						<span class="time">2017-09-11</span>
+						<span class="time2">22:00</span>
+					</p>
+					<p class="jsdd">借阅地点：<span>上海万达某某店</span></p>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="LCcomm">
+				<!-- 损坏赔偿 -->
+				<div class="Total shpc">损坏赔偿：<b>
+				¥</b><span>40.00</span></div>
+				<a class="LClink" href="#">
+					<img class="limg" src="../images/img8.jpg" />
+					<p class="lright">
+						<span class="sm">我和幸福只差一个你我和幸福只差一个你</span>
+						<span class="zz">作<i>空</i>者:<b>王国军</b></span>
+						<span class="cbs">出版社:<b>北方文艺出版社</b></span>
+					</p>
+				</a>
+				<p class="Borrow">租金：<span>¥1.00</span>/天</p>
+			</div>
+			<!-- 取消借阅 -->
+			<div class="qxjy">
+				<a class="" href="#">确定</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/pageResponse.min.js"></script>
+<script type="text/javascript">
+	//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
+	window.onload = window.onresize = function(){
+    pageResponse({
+        selectors : '.LibraryCode',//模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover
+        width : '320',
+        height : '504',
+    }); 
+}
+</script>
+</html>

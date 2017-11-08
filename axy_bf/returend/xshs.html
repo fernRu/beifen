@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/xshs.css">
+</head>
+<body>
+	<!-- ibookway-线上还书 -->
+	<div class="xshs">
+		<!-- top -->
+		<div class="xshs_top">
+			<a class="return" href="#"><img src="images/arrow.png" /></a>
+			<span class="x_txt">线上还书</span>
+		</div>
+		<!-- 线上还书内容 -->
+		<div class="xshsList">
+			<!-- 订单信息 -->
+			<div class="xl_ddxx">
+				<!--  -->
+				<div class="dd_img"><img src="images/xq.jpg" /></div>
+				<!--  -->
+				<div class="dd_con">
+					<p class="dd_txt">我和幸福只差一个你</p>
+					<p class="dd_price">售价&nbsp;:&nbsp;¥<span>30.22</span><i>元</i></p>
+				</div>
+				<!--  -->
+				<div class="dd_right">
+					<p class="zjjg">¥<span>1.00</span>/天</p>
+					<p class="day_num"><b>x</b><span>7</span>天</p>
+				</div>
+				<!-- 合计 -->
+				<div class="total">
+					<p class="hrji">合计&nbsp;:&nbsp;¥<span>7.00</span>元</p>
+					<p class="day_num2">共<span>7</span>天</p>
+				</div>
+			</div><!-- xl_ddxx-end -->
+			<!-- 收货地址 -->
+			<div class="receiving_address">
+				<ul>
+					<!-- 收件地址 -->
+					<li class="sjdz">
+						<span class="ra_txt">收件地址&nbsp;:&nbsp;</span>
+						<span class="addr">上海市静安区光复路1号四行仓库百联科创中心223试fffffffffffffffff</span>
+					</li>
+					<!-- 收件人 -->
+					<li class="sjr">
+						<span class="ra_txt">收件人<b class="kong">空</b>&nbsp;:&nbsp;</span>
+						<span class="sjr_name">ibookway</span>
+					</li>
+					<!-- 联系电话 -->
+					<li class="lxdh">
+						<span class="ra_txt">联系电话&nbsp;:&nbsp;</span>
+						<span class="dhhm">15812345678</span>
+					</li>
+				</ul>
+			</div><!-- ra-end -->
+			<!-- 快递选择 -->
+			<div class="kdxz">
+				<!--  -->
+				<div class="xz_con">
+					<span class="xz_txt">快递选择</span>
+					<div class="mrxz">
+						<span class="default">默认&nbsp;:&nbsp;</span>
+						<a class="value" data-belong="value">圆通快递</a>
+					</div>
+					<!--  -->
+					<div class="kd_sel" style="display: none;">
+						<a class="value" data-belong="value" href="#" value="顺丰快递" >顺丰快递</a>
+						<a class="value" data-belong="value" href="#" value="韵达快递">韵达快递</a>
+						<a class="value" data-belong="value" href="#" value="韵达快递">韵达快递韵达快递</a>
+					</div>
+				</div>
+				<!-- 运单编号 -->
+				<div class="ydbh">
+					<p class="bh_txt">运单编号</p>
+					<!-- 输入编号 -->
+					<div class="srbh">
+						<input type="text" name="" placeholder="请输入正确的运单编号" />
+					</div>
+				</div>
+			</div><!-- kdxz-end -->
+			<!-- 备注 -->
+			<div class="remarks">
+				<p class="rmk_txt">备注</p>
+				<div class="textbox">
+					<textarea placeholder="书籍丢失、损坏等问题，请备注"></textarea>
+				</div>
+			</div><!-- remarks-end -->
+			<!-- 提交 -->
+			<button class="submit_butt">提交</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+// 物流筛选
+$('.xz_con .mrxz').on('click',function (event) {
+    event.stopPropagation();//阻止事件冒泡
+    $(this).siblings('.xz_con .kd_sel').toggle();
+    $(".xz_con .kd_sel:lt(2) a").click(function(){
+		$(".xz_con .mrxz ."+$(this).attr('data-belong')).remove();
+		$(this).clone().appendTo(".xz_con .mrxz");
+		$('.xz_con .kd_sel').hide();
+	});
+    //点击空白处，下拉框隐藏-------开始
+    var tag = $(this).siblings('.xz_con .kd_sel');
+    var flag = true;
+    $(document).bind("click",function(e){//点击空白处，设置的弹框消失
+        var target = $(e.target);
+        if(target.closest(tag).length == 0 && flag == true){
+            $(tag).hide();
+            flag = false;
+        }
+    });
+    //点击空白处，下拉框隐藏-------结束
+});
+</script>
+</html>

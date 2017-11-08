@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="css/publicIndex.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+</head>
+<body>
+	<!-- ibookway-首页 -->
+	<div class="indexFrame">
+		<!-- 头部分内容 -->
+		<div class="header">
+			<!-- 切换城市 -->
+			<div class="xzcs">
+				<div class="switch">
+					<a class="value" data-belong="value">上海</a>
+				</div>
+				<div class="xz" style="display: none;">
+					<a class="value" data-belong="value" href="#" value="上海" >上海</a>
+					<a class="value" data-belong="value" href="#" value="北京">北京</a>
+				</div>
+			</div>
+			<!-- 搜索 -->
+			<div class="search">
+				<input type="text" name="" placeholder="请输入书名、点名、作者" />
+			</div>
+			<!-- 个人中心 -->
+			<div class="personal"><a href="#"><b></b></a></div>
+		</div>
+		<!-- 中间内容 -->
+		<div class="contentMiddle">
+			<!-- 轮播 -->
+			<div class="swiper-container carousel">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="#"><img src="images/img1.jpg" /></a></div>
+					<div class="swiper-slide"><a href="#"><img src="images/img2.jpg" /></a></div>
+					<div class="swiper-slide"><a href="#"><img src="images/img3.jpg" /></a></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- 分类 -->
+			<div class="classify">
+				<ul>
+					<li><a href="#"><img src="images/cxb.png" /><span>畅销</span></a></li>
+					<li><a href="#"><img src="images/salability.png" /><span>好评</span></a></li>
+					<li><a href="#"><img src="images/promotion.png" /><span>促销</span></a></li>
+					<li><a href="#"><img src="images/syfl.png" /><span>更多</span></a></li>
+				</ul>
+			</div>
+			<!-- 列表 -->
+			<div class="indexList">
+				<!-- 推荐好书 -->
+				<div class="tjbt">
+					<span>推荐好书</span>
+					<a class="more" href="#">更多></a>
+				</div>
+				<!-- recommend -->
+				<div class="recommend">
+					<a href="#">
+						<div class="rmd_img"><img src="images/img10.jpg" /></div>
+						<div class="rmd_title">
+							<span class="tit">孙子兵法孙子兵法孙子兵法孙子兵法孙子兵法孙子兵法</span>
+							<span class="price">¥1.00/天</span>
+						</div>
+						<p class="xbs">小编说</p>
+						<p class="rmd_cn"><b>“</b><span>讲的是庙算，即出兵前在庙堂上比较敌我的各种条件，估算战事胜负的可能性，并制订作战计划。讲的是庙算，即出兵前在庙堂上比较敌我的各种条件，估算战事胜负的可能性，并制订作战计划。</span><b>”</b></p>
+					</a>
+				</div>
+				<!--  -->
+				<div class="list_con">
+					<ul>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法孙子兵法孙子兵法孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+						<li><a href="#"><img src="images/img10.jpg" /><span>孙子兵法</span></a></li>
+					</ul>
+				</div>
+				<!-- 清除浮动 -->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 尾部内容 -->
+		<div class="footer">
+			<ul>
+				<li class="ftSel"><a class="ws_borrow" href="index.html"><b></b><span>网上借</span></a></li>
+				<li><a class="dd_borrow" href="BookstoreList.html"><b></b><span>到店借</span></a></li>
+				<li><a class="sys" href="#"><b></b></a></li>
+				<li><a class="jq_borrow" href="machineBorrow.html"><b></b><span>机器借</span></a></li>
+				<li><a class="immediate_return" href="ljgh.html"><b></b><span>立即归还</span></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 0,
+		centeredSlides: true,
+			loop:true,
+		autoplay: {
+			enabled: true,
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		// navigation: {
+		//   nextEl: '.swiper-button-next',
+		//   prevEl: '.swiper-button-prev',
+		// },
+	});
+</script>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/switch.js"></script>
+</html>

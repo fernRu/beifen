@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway-读书笔记</title>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/notes.css">
+</head>
+<body>
+	<!-- 读书笔记 -->
+	<div class="notes">
+		<!-- nav -->
+		<div class="nav">
+			<a class="return" href="#"><img src="images/arrow.png"></a>
+			<span>读书笔记</span>
+		</div>
+		<!-- 添加笔记 -->
+		<div class="add_notes">
+			<!-- time -->
+			<div class="time">
+				<span>时间</span>
+				<b class="down"></b>
+			</div>
+			<!-- tjbj -->
+			<div class="tjbj">
+			    <p class="class1" data-belong="class1">已添加笔记</p>
+				<ul style="display:none ;">
+					<li class="class1" data-belong="class1">已添加笔记</li>
+					<li class="class1" data-belong="class1">未添加笔记</li>
+				</ul>
+				<!-- <select>
+					<option value ="">已添加笔记</option>
+					<option value="">未添加笔记</option>
+				</select> -->
+			</div>
+			<!-- search -->
+			<a class="search" href="#"><img src="images/search-icon.png" /></a>
+		</div>
+		<!-- 笔记列表 -->
+		<div class="notesList">
+			<ul>
+				<li>
+					<a class="Lleft" href="#">
+						<img class="Limg" src="images/img6.jpg" />
+						<div class="con">
+							<p class="Title">大雪中的山庄</p>
+							<p class="jsrq">借书日期：<span>2017-09-04</span></p>
+							<p class="xgrq">修改日期：<span>2017-09-08</span></p>
+						</div>
+					</a>
+					<a class="Rleft" href="notesRevise.html">修改笔记</a>
+				</li>
+				<li>
+					<a class="Lleft" href="#">
+						<img class="Limg" src="images/img6.jpg" />
+						<div class="con">
+							<p class="Title">大雪中的山庄大雪ddddddddddddddddddddddddddddddddddddddddd</p>
+							<p class="jsrq">借书日期：<span>2017-09-04</span></p>
+							<p class="xgrq">修改日期：<span>2017-09-08</span></p>
+						</div>
+					</a>
+					<a class="Rleft" href="#">修改笔记</a>
+				</li>
+			</ul>
+		</div><!-- notesList-end -->
+		<!-- 笔记列表 -->
+		<div class="notesList">
+			<ul>
+				<li>
+					<a class="Lleft" href="#">
+						<img class="Limg" src="images/img6.jpg" />
+						<div class="con">
+							<p class="Title">大雪中的山庄</p>
+							<p class="jsrq">借书日期：<span>2017-09-04</span></p>
+						</div>
+					</a>
+					<a class="Rleft" href="#">添加笔记</a>
+				</li>
+				<li>
+					<a class="Lleft" href="#">
+						<img class="Limg" src="images/img6.jpg" />
+						<div class="con">
+							<p class="Title">大雪中的山庄</p>
+							<p class="jsrq">借书日期：<span>2017-09-04</span></p>
+						</div>
+					</a>
+					<a class="Rleft" href="#">添加笔记</a>
+				</li>
+				<li>
+					<a class="Lleft" href="#">
+						<img class="Limg" src="images/img6.jpg" />
+						<div class="con">
+							<p class="Title">大雪中的山庄</p>
+							<p class="jsrq">借书日期：<span>2017-09-04</span></p>
+						</div>
+					</a>
+					<a class="Rleft" href="#">添加笔记</a>
+				</li>
+			</ul>
+		</div><!-- notesList-end -->
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+// $('.tjbj').click(function () {
+// 	$('.tjbj ul').show();
+// });
+//只需保持 button 的 class 标志 和data-belong  一致即可。
+    // $("div.tjbj ul:lt(2) p").click(function(){
+    //     $("div.tjbj ."+$(this).attr('data-belong')).remove();
+    //     $(this).clone().appendTo("div.tjbj");
+    // })
+
+	$('.tjbj').click(function(){
+		$('.tjbj ul').show();
+	});
+    $(".count2:lt(2) a").click(function(){
+        $("div.count ."+$(this).attr('data-belong')).remove();
+        $(this).clone().appendTo("div.count");
+    	$('.count2').hide();
+    })
+
+
+</script>
+</html>

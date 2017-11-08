@@ -1,0 +1,244 @@
+button:focus { outline: none;}
+/*公共隐藏*/
+.dwxq .dz, .store .sd,.order .o_sm,.order .o_zz,.order .o_cbs,.prompt span,.information .name {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*订单结算页面*/
+body {background: #f2f2f2;}
+/*navDd*/
+.navDd {height: 38px;padding: 0 12px;background: #ffffff;overflow: hidden;}
+.navDd a,.navDd .confirm {float: left;font-size: 0.94em;line-height: 38px;}
+.navDd a.grzx {float: right;}
+.navDd .return img {float: left;width: 12px;margin: 8px 10px 0 0;}
+/*content*/
+.content {padding-bottom: 60px;}
+/*location*/
+.location {background: #ffffff;margin-top: 5px;border-bottom: 1px solid #e1e1e1;}
+.location a {position: relative;display: block;padding:  10px 50px 10px 40px;}
+.dwxq .adressBig,.add_dz .add_to {
+	position: absolute;
+	left: 12px;
+	top: 28px;
+	width: 16px;
+}
+.location a .arrowRight {
+	position: absolute;
+	right: 12px;
+	top: 28px;
+	width: 12px;
+}
+.dwxq .mz_hm {height: 26px;overflow: hidden;}
+.dwxq .mz_hm span {float: left;line-height: 26px;font-size: 0.94em;}
+.dwxq .mz_hm .name {
+	height: 26px;
+	max-width: 52%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dwxq .mz_hm .dhhm {padding-left: 12px;}
+.dwxq .dz {
+	color: #979797;
+	font-size: 0.88em;
+	height: 24px;
+	padding-top: 10px;
+	line-height: 24px;
+}
+.location a.add_dz {height: 30px;padding:  16px 50px 16px 40px;}
+.location a.add_dz .add_to {width: 30px;top: 16px;}
+.add_dz .new {font-size: 0.94em;line-height: 30px;padding-left: 26px;}
+.location a.add_dz .arrowRight {top: 20px;}
+/*order_list*/
+.order_list {background: #ffffff;margin-top: 5px;}
+/*store*/
+.order_list .store {
+	height: 35px;
+	padding: 0 12px;
+	background: #ffffff;
+}
+.order_list .store img {width: 20px;height: 18px;float: left;margin-top: 8px;}
+.store .sd {float: left;height: 35px;line-height: 36px;width: 80%;padding-left: 10px;font-size: 0.94em;}
+/*订单列表*/
+.order_list .Olist {}
+.Olist li {}
+.Olist .order {
+	position: relative;
+	padding: 14px 12px 0 100px;
+	border-top: 1px solid #f2f2f2;
+	display: block;
+}
+.order .o_img {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+}
+.order .o_sm,.order .o_zz,.order .o_cbs {font-size: 0.94em;line-height: 28px;color: #979797;}
+.order span {color: #222222;}
+.Olist .o_sel {height: 32px;padding: 0 12px;overflow: hidden;}
+.Olist .o_sel b {
+	float: right;
+	width: 26px;
+	height: 26px;
+	background: url('../images/yuan2.png') no-repeat;
+	background-size: 26px;
+}
+/*选择修改*/
+.Olist2 li {position: relative;}
+.Olist2 label {
+	position: relative;
+	padding: 14px 12px 32px 100px;
+	border-top: 1px solid #f2f2f2;
+	display: block;
+}
+.piaochecked{
+    position: absolute;
+    top: 96px;
+    right: 12px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    background: url('../images/yuan1.png') no-repeat;
+    background-size: 26px;
+}
+.on_check,.on .demospan{
+   background: url('../images/yuan2.png') no-repeat;
+   background-size: 26px;
+}
+.cbdemo2,.demo2{
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+    filter:alpha(opacity=0);
+}
+.Olist2 .price {
+	border-top: 1px solid #f2f2f2;
+	height: 46px;
+	line-height: 46px;
+	text-align: right;
+	padding: 0 12px;
+}
+.Olist2 .price span {line-height: 46px;}
+.order .o_img {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+}
+/**/
+.Olist .price {
+	border-top: 1px solid #f2f2f2;
+	height: 46px;
+	line-height: 46px;
+	text-align: right;
+	padding: 0 12px;
+}
+.Olist .price span {line-height: 46px;}
+/*prompt*/
+.prompt {height: 34px;overflow: hidden;background: #f2f2f2;padding: 0 12px;}
+.prompt img {
+	float: left;
+	width: 21px;
+	height: 21px;
+	padding-top: 6px;
+}
+.prompt span {font-size: 0.80em;line-height: 34px;float: left;margin: 2px 0 0 10px;width: 86%;}
+/*dispatching*/
+.dispatching {
+	height: 45px;
+	border-top: 1px solid #f2f2f2;
+	font-size: 0.94em;
+	padding: 0 12px;
+	overflow: hidden;
+}
+.dispatching .psf,.dispatching .jg {float: left;line-height: 46px;}
+.dispatching .jg {float: right;}
+/*结算accounts*/
+.accounts {
+	position: fixed;
+	bottom: 0;
+	height: 53px;
+	left: 0;
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+}
+.accounts .total {
+	float: left;
+	line-height: 54px;
+	font-size: 1.13em;
+	padding-left: 12px;
+}
+.accounts .qrjs {
+	float: right;
+	font-size: 1.13em;
+	background: #00cc99;
+	color: #ffffff;
+	width: 150px;
+	height: 53px;
+	border: 0;
+}
+/*修改地址*/
+.navDd .confirm {float: right;border: 0;background: inherit;}
+.ModifyAddress li {
+	position: relative;
+	background: #ffffff;
+	margin-top: 10px;
+	padding: 0 14px 14px;
+}
+.ModifyAddress li label {display: block;}
+.ModifyAddress .dz {
+	padding: 0 50px 0 40px;
+	font-size: 0.94em;
+	line-height: 20px;
+	padding-top: 6px;
+	min-height: 40px;
+}
+.demospan{
+	position: absolute;
+	left: 14px;
+	top: 50px;
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+	background: url('../images/yuan1.png') no-repeat;
+    background-size: 24px;
+}
+.information {height: 38px;overflow: hidden;}
+.information span {
+	float: left;
+	font-size: 1.13em;
+	color:#979797;
+	line-height: 38px;
+}
+.information .dhhm {float: right;}
+.information .name {width: 60%;}
+.ModifyAddress li .add_to2 {
+	position: absolute;
+	top: 50px;
+	right: 14px;
+	width: 24px;
+	height: 24px;
+}
+.add_to2 img {width: 100%;}
+.ModifyAddress .on .demospan{background-size: 24px;}
+.ModifyAddress .on .information span {color: #00cc99;}
+.ModifyAddress i {
+	position: absolute;
+	top: 44px;
+	left: 14px;
+	font-size: 0.75em;
+	color: #00cc99;
+	font-weight: normal;
+	display: none;
+}
+.ModifyAddress .on .demospan {top: 60px;}
+.ModifyAddress .on i {display: block;}

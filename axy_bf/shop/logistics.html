@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/logistics.css">
+</head>
+<body>
+	<!-- ibookway-物流 -->
+	<div class="navDd">
+		<a class="return" href="#"><img src="../images/arrow.png" /><span>返回上页</span></a>
+		<!--  个人中心-->		
+		<a class="grzx" href="#">个人中心</a>
+	</div><!-- nav-end -->
+	<!-- 物流内容-->
+	<div class="logistics">
+		<!-- 订单信息 -->
+		<div class="order_info">
+			<div class="name_phone">
+				<span class="name">产品王产品王</span>
+				<span class="phone">18317121080</span>
+			</div>
+			<!-- dz -->
+			<div class="address">
+				<span class="add_text">地址:</span>
+				<span class="add_con">上海市闸北区四行厂库1号楼223室ddddddddddddddddddddddddddddddddddddddd</span>
+			</div>
+		</div>
+		<!-- 订单流程 -->
+		<div class="order_process">
+			<!-- 状态 -->
+			<div class="state">
+				<span class="sta_text">已支付</span>
+				<p class="ord_time">
+					<span class="date">2017-02-05</span>
+					<span class="time">13:00</span>
+				</p>
+			</div>
+			<!-- 流程 -->
+			<!-- proSel是已支付状态/
+				proSel2是拣货状态/
+				proSel3是待配送状态/
+				proSel4是已完成状态 /
+				每个状态样式同时出现一个
+			-->
+			<div class="proList proSel2">
+				<ul>
+					<li class="yzf first">
+						<b></b>
+						<span class="proLeft">已支付</span>
+						<span class="yzf_time">13:00</span>
+						<span class="yzf_date">2017-02-05</span>
+					</li>
+					<li class="jhz">
+						<b></b>
+						<span class="proLeft">拣货中</span>
+						<span class="jhz_time">14:00</span>
+						<span class="jhz_date">2017-02-05</span>
+					</li>
+					<li class="dps">
+						<b></b>
+						<span class="proLeft">待配送</span>
+						<span class="dps_time">15:00</span>
+						<span class="dps_date">2017-02-05</span>
+					</li>
+					<li class="last">
+						<b></b>
+						<span class="proLeft">已完成</span>
+						<span class="ywc_time">16:00</span>
+						<span class="ywc_date">2017-02-05</span>
+					</li>
+				</ul>
+			</div><!-- proList-end -->
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	// 电话号码隐藏
+	$(function() {
+		var tel = $('.name_phone .phone').html();
+		var mtel = tel.substr(0, 3) + '****' + tel.substr(7);  
+		$('.name_phone .phone').text(mtel);
+	});
+</script>
+</html>
