@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+</head>
+<body>
+	<!-- ibookway-搜索 -->
+	<div class="search_whole">
+		<!-- nav -->
+		<div class="sw_nav">
+			<a class="return" href="/index.html"><img src="images/arrow.png"></a>
+			<!-- 搜索 -->
+			<div class="search">
+				<!-- autofocus="autofocus"显示光标属性 -->
+				<input type="text" name="" placeholder="请输入书名、点名、作者" />
+			</div>
+			<!-- 搜索bttn -->
+			<button class="sw_bttn">搜索</button>
+		</div>
+		<!-- 分类 -->
+		<div class="sw_classify">
+			<ul>
+				<li class="default swc_sel"><a href="javascript:void(0);">默认</a></li>
+				<li class="on_line"><a href="javascript:void(0);">线上</a></li>
+				<li class="shop"><a href="javascript:void(0);">店铺</a></li>
+				<li class="machine"><a href="javascript:void(0);">机器</a></li>
+				<li class="personal"><a href="javascript:void(0);">个人</a></li>
+			</ul>
+		</div>
+		<!-- 资料nr -->
+		<div class="swList">
+			<ul>
+				<!-- 搜索列表书 -->
+				<li>
+					<a class="swl_book" href="#">
+						<img class="bk_img" src="images/img10.jpg" />
+						<!-- 书名 -->
+						<div class="sb_name">1孙子兵法*三十六计智谋全解</div>
+						<!-- 作者 -->
+						<div class="sb_author">作者&nbsp;:&nbsp;<span>孙子</span></div>
+						<!-- 描述 -->
+						<div class="sb_describe">
+							<span>描述&nbsp;:&nbsp;</span>
+							<div class="describe">
+								<div>
+									<p>《孙子兵法》</p>
+									<span>又称《孙武兵法》《孙子兵法》又称《孙武兵法》、《吴孙子兵法》、《孙子兵书》《孙武兵书》等，是中国现存最早的兵书，也是世界上最早的军事著作，被誉为“兵学圣典”。共有六千字左右，一共十三篇。</span>
+									《孙子兵法》又称《孙武兵法》、《吴孙子兵法》、《孙子兵书》《孙武兵书》等，是中国现存最早的兵书，也是世界上最早的军事著作，被誉为“兵学圣典”。共有六千字左右，一共十三篇。
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<!-- 搜索列表定位 -->
+				<li>
+					<a class="swl_location" href="#">
+						<img class="loc_img" src="images/ssj.png" />
+						<div class="loc_con">上海市静安区光复路1号 百联全球商业互联网创科技中心 2楼223室</div>
+						<span class="loc_distance"><&nbsp;<b>8.4km </b></span>
+					</a>
+				</li>
+			</ul>
+			<!-- 搜索无内容 -->
+			<div class="sswnr" style="display: none;">
+				<p class="sswnr_img"><img src="images/wzd.png"></p>
+				<p class="sswnr_txt">没有查到相关书籍</p>
+			</div>
+		</div><!-- swList-end -->
+	</div><!-- search_whole-end -->
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script>
+	//标签转换
+	var element = $(".describe").children();
+	var text="";
+	GetText(element);
+
+	function GetText(element) {
+		//debugger;
+		if (element.length > 1) {
+			for (var i = 0; i < element.length; i++) {
+				GetText(element.eq(i).children());
+			}
+		}
+		else {
+			//console.log(element.text());
+			if (element.children().length > 0) {
+				for (var i = 0; i < element.children().length; i++) {
+					GetText(element.children().eq(i));
+				}
+			}
+			else text = text + element.text() + "<br/>";
+		}
+	}
+	$(".describe").html(text);
+</script>
+<script type="text/javascript">
+	//切换
+	$('.sw_classify ul li').click(function(){
+		$(this).addClass('swc_sel').siblings().removeClass('swc_sel');
+	});
+	// 
+	// $(function(){
+	// 	$(".sw_classify li").click(function(){
+	// 		//on_line
+	// 		var txt=$('.sw_classify .on_line').text();
+	// 		if($.trim(txt)!=""){
+	// 			$(".swList li a").hide().filter(":contains('"+txt+"')").show()
+	// 		}else{
+	// 			$(".swList li a").css("background","red");
+	// 		}
+	// 	});
+	// })
+</script>
+</html>
