@@ -1,0 +1,334 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, input, img{
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	color: #333333;
+}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #222222;-webkit-tap-highlight-color:transparent;}
+i {font-style: normal;}
+img {border: 0;}
+.clear {clear: both;}
+input:focus, textarea:focus { outline: none;}
+/*公用隐藏*/
+.xxcom .name,.searList .yhmz,.Message .searList .problem {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+/*个人信息*/
+body {background: #ffffff;}
+/*nav*/
+.nav {height: 44px;padding: 0 10px;text-align: center;overflow: hidden;position: relative;}
+.nav a.return {position: absolute;left: 10px;top: 10px;width: 12px;height: 21px;}
+.nav a.return img,.nav a.partake img, .chat .user img {display: block;width: 100%;}
+.nav a.partake, .Add_friends .nav .send, .chat .user {position: absolute;top: 10px;width: 20px;height: 20px;right: 10px;}
+.nav span{color: #222222;line-height: 44px;font-size: 1.2em;display: block;}
+/*head*/
+.head {
+	position: relative;
+	height: 180px;
+	background: url('../images/xxbg.jpg') no-repeat center;
+	margin-bottom: 50px;
+	border-top: 4px solid #eeeeee;
+}
+.head .tx {
+	position: absolute;
+	width: 116px;
+	height: 116px;
+	padding: 4px;
+	background: #ffffff;
+	border-radius: 50%;
+	bottom: 0;
+	left: 50%;
+	margin: 0 0 -50px -62px;
+}
+.head .tx img {width: 100%;border-radius: 50%;display: block;}
+/*信息内容xxcom*/
+.xxcom {text-align: center;padding-bottom: 20px;border-bottom: 1px solid #eeeeee;margin: 0 10px;}
+.xxcom .name {color: #000000;font-size: 1.4em;height: 30px;line-height: 30px;width: 60%;}
+.xxcom .summary {height: 24px;}
+.summary span {line-height: 24px;display: inline-block;color: #979797;font-size: 0.8em;}
+/*bkf*/
+.bkf {text-align: center;}
+.bkf p {color: #979797;font-size: 1.36em;padding-top: 40px;}
+/*加为好友*/
+.jwhy {position: fixed;bottom: 0;left: 0px;width: 100%;background: #08cb8f;text-align: center;}
+.jwhy a {display: block;color: #ffffff;font-size: 1.4em;padding: 10px 0;}
+/*ydList*/
+.ydList {padding: 0 5px 70px;}
+.ydList li {float: left;width: 33.3%;}
+.ydList li a {
+	display: block;border:1px solid #f2f2f2;
+	text-align: center;
+	padding: 4px 14px;
+	margin: 5px 5px 0 5px;
+}
+.ydList li img {width: 100%;}
+.ydList .pulldown {
+	height: 16px;
+	clear: both;
+	text-align: center;
+	padding-top: 8px;
+	overflow: hidden;
+}
+@-webkit-keyframes myfirst {0% {top: 0px;}100% {top: 2px;}}
+.pulldown img {
+	position: relative;
+	display: block;
+	height: 13px;
+	width: 18px;
+	/*抖动*/
+	animation-name: myfirst;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-delay: 0.12s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	/*Safari 和 Chrome:*/
+	-webkit-animation-name: myfirst;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0.12s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+/*advance*/
+.advance, .delete_buddy .gdc {
+	border-top: 1px solid #eeeeee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 8px 0;
+	background: #ffffff;
+}
+.advance a {
+	float: left;
+	margin-left: 30px;
+	border: 1px solid #f2f2f2;
+	width: 108px;
+	text-align: center;
+	font-size: 1.36em;
+	color: #000000;
+	padding: 8px 0;
+	border-radius: 6px;
+}
+.advance a.fxx {float: right;margin: 0 30px 0 0;color: #ffffff;background: #00c789;}
+/*删除好友===弹框*/
+.delete_buddy {
+	position: absolute;
+	background: url('../images/bg.png');
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	zoom:1;
+}
+.delete_buddy .gdc {text-align: center;}
+.gdc .bt {color: #616161;height: 40px;line-height: 20px;padding: 8px 20px 16px;}
+.gdc .schy {border: solid #f2f2f2;border-width: 1px 0px 1px 0px;padding: 24px 0;}
+.gdc .schy a,.gdc .delete a {color: #fb5558;font-size: 1.2em;display: block;}
+.gdc .delete {padding: 10px 0 2px;}
+.gdc .delete a {color: #222222;}
+/*加为好友*/
+.Add_friends {}
+.Add_friends .nav, .Del_friends .nav, .chat .nav {background: #ffffff;border-bottom: 1px solid #979797;}
+.Add_friends .nav .send {
+	color: #08cb8f;
+	width: 60px;
+	height: 30px;line-height: normal;
+	text-align: right;
+	font-size: 1.2em;
+}
+.Add_friends .yzbt {color: #626262;padding: 10px;}
+.Verification .VerCom {height: 38px;background: #ffffff;padding: 0 10px;overflow: hidden;}
+.VerCom input {
+	border:0;
+	line-height: 38px;
+	font-size: 1.2em;
+	height: 38px;
+	float: left;
+	width: 70%;
+}
+.VerCom .del {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	margin-top: 8px;
+}
+.VerCom .del img {display: block;width: 20px;}
+/*删除好友Del_friends.html*/
+.SearchList .search {position: relative;background: #f2f2f2;padding: 10px;height: 32px;}
+.search input {
+	text-align: center;
+	color: #616161;
+	width: 80%;
+	padding: 0 10%;
+	height: 30px;
+	line-height: 30px;border: 1px solid #cfcfcf;
+	border-radius: 8px;
+	display: block;
+	font-size: 0.9em;
+}
+.search .Magnifier {
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	width: 17px;
+	margin-left: -34px;
+}
+.search .hide {display: none;}
+/*searList*/
+.searList {border-top: 1px solid #cfcfcf;padding: 0 10px;background: #ffffff;}
+.searList li {
+	height: 64px;
+	position: relative;
+	border-bottom: 1px solid #cfcfcf;
+	padding: 0 70px 0 52px;
+	overflow: hidden;
+}
+/*.searList li.bkqx {border-top: 0;}*/
+.searList .yhtx {
+	position: absolute;
+	left: 0px;
+	width: 42px;
+	width: 42px;
+	top: 11px;
+}
+.searList .yhtx img {display: block;width: 100%;border-radius: 6px;}
+.searList .schyT,.Message .searList .time {
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 64px;
+	width: 70px;
+	text-align: right;
+}
+.searList .yhmz {font-size: 1.2em;line-height: 64px;height: 64px;display: block;}
+/*result搜索结果*/
+.result .searList {border:0;}
+/*搜索无结果*/
+.sswjg {padding-top: 100px;}
+.sswjg .SsImg {width: 100px;}
+.sswjg .SsImg img {display: block;width: 100%;}
+.sswjg .text {color: #979797;font-size: 1.2em;padding-top: 20px;text-align: center;}
+/*聊天记录*/
+.chat {}
+.chat .user {right: 14px;}
+/*ChatRecord*/
+.ChatRecord {padding-bottom: 70px;}
+.ChatRecord li {position: relative;padding: 0 62px;margin-top: 20px;text-align: left;}
+.ChatRecord li img {position: absolute;left: 10px;top: 0;width: 40px;height: 40px;}
+.ChatRecord li.NewsRight img{right: 0;left: initial;right: 10px;}
+.ChatRecord li b {
+	position: absolute;
+	right: 58px;
+	top: 14px;
+	width: 8px;
+	height: 8px;
+	background: #00c789;
+	border: 1px solid #04a774;
+	border-width: 1px 1px 0 0;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+.ChatRecord .NewsLight b {
+	right: inherit;
+	left: 58px;
+	background: #ffffff;
+	border-width: 0 0 1px 1px;
+}
+.NewsLight span, .NewsRight span {
+	display: inline-block;
+	border: 1px solid #04a774;
+	word-break: break-all;
+	border-radius: 6px;
+	margin: 0;
+	padding: 7px;
+	max-width: 80%;
+	text-align: justify;
+	line-height: 24px;
+	z-index: 1;
+}
+.ChatRecord li.NewsRight {text-align: right;}
+.ChatRecord .NewsRight span {background: #00c789;color: #ffffff;word-break: break-all;}
+.ChatRecord .NewsTime p {background: #cfcfcf;display: table;border-radius: 6px;padding: 2px 8px;}
+.ChatRecord .NewsTime span {color: #ffffff;font-size: 0.9em;display: inline-block;}
+.ChatRecord .NewsTime .time {margin-left: 10px;}
+/*发送消息transmit*/
+.transmit {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #979797;
+	width: 100%;
+	background: #f2f2f2;
+	height: 54px;
+}
+.transmit .TranBk {position: relative;padding: 0 70px 0 10px;}
+.TranBk a {
+	position: absolute;
+	top: 22px;
+	right: 0;
+	text-align: center;
+	color: #616161;
+	font-size: 1.2em;
+	width: 70px;
+	line-height: 0;
+}
+/*.TranBk input {
+	border: 1px solid #c8c8c8;
+	line-height: 42px;
+	height: 42px;
+	margin-top: 5px;
+	border-radius: 4px;
+	background: #ffffff;
+	padding: 0 10px;
+	overflow: hidden;
+}
+*/
+.TranBk p {
+	border: 1px solid #c8c8c8;
+	height: 42px;
+	margin-top: 5px;
+	border-radius: 4px;
+	background: #ffffff;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.TranBk p input {
+	border: 0;
+	line-height: 42px;
+	width: 100%;
+}
+/*消息*/
+.Message {}
+.Message .searList .time {color: #979797;}
+.Message .searList .kf {
+	font-size: 1.14em;
+	padding-top: 10px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.Message .searList .problem {
+	height: 20px;
+	color: #979797;
+	display: block;
+	line-height: 20px;
+	padding-top: 6px;
+}
+
+/*===========*/
+
+
+
+
+
+
+
+
+

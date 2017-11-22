@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/dghsj.css">
+</head>
+<body>
+	<!-- ibookway-待归还书籍 -->
+	<div class="dghsj">
+		<!-- top -->
+		<div class="dgh_nav">
+			<a class="return" href="#"><img src="images/arrow.png" /></a>
+			<span class="dghn_txt">待归还书籍</span>
+		</div>
+		<!-- 待归还内容 -->
+		<div class="dgh_cont" style="display: none;">
+			<!--  -->
+			<ul>
+				<li class="dgi_sel">
+					<span class="dgh_radio">
+						<input type="radio" name="radio" id="radio1" checked="checked" />
+					</span>
+					<label for="radio1">
+						<div class="dghCon">
+							<!-- 图书 -->
+							<img class="dc_img" src="../images/img10.jpg" />
+							<!-- 书名 -->
+							<div class="dc_name">巨人的陨落巨人的</div>
+							<!-- 售价 -->
+							<div class="price">售价：<b>¥10.00</b>元</div>
+							<!-- 价格/时间 -->
+							<div class="dc_jg">
+								<span class="jg">¥<b>2.00</b>/天</span>
+								<span class="day_num"><b>x</b>5天</span>
+							</div>
+						</div>
+						<!-- 合计 -->
+						<div class="total">
+							<span class="t_day">共<b>5</b>天</span>
+							<span class="hj">合计&nbsp;:</span>
+							<span class="gj">¥10.00</span>
+						</div>
+					</label>
+				</li>
+				<li>
+					<span class="dgh_radio">
+						<input type="radio" name="radio" id="radio2" />
+					</span>
+					<label for="radio2">
+						<div class="dghCon">
+							<!-- 图书 -->
+							<img class="dc_img" src="../images/img10.jpg" />
+							<!-- 书名 -->
+							<div class="dc_name">巨人的陨落巨人的</div>
+							<!-- 售价 -->
+							<div class="price">售价：<b>¥10.00</b>元</div>
+							<!-- 价格/时间 -->
+							<div class="dc_jg">
+								<span class="jg">¥<b>2.00</b>/天</span>
+								<span class="day_num"><b>x</b>5天</span>
+							</div>
+						</div>
+						<!-- 合计 -->
+						<div class="total">
+							<span class="t_day">共<b>5</b>天</span>
+							<span class="hj">合计&nbsp;:</span>
+							<span class="gj">¥10.00</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+			<!-- 确认归还 -->
+			<button class="qrgh">确认归还</button>
+		</div><!-- dgh_cont-end -->
+		<!-- 无订单 -->
+		<div class="no_order">
+			<img class="no_img" src="images/zbd.png" />
+			<p class="no_txt">暂无订单！</p>
+			<a class="no_ljjy" href="#">立即借阅</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	// 筛选
+	$(function(){
+		$(".dgh_cont li").bind("click",function(){
+			$(this).addClass("dgi_sel").siblings().removeClass("dgi_sel");
+		})
+	});
+</script>
+</html>

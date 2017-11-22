@@ -1,0 +1,162 @@
+body {background: #ebebeb;}
+/*显示隐藏*/
+.loc_list .Location span {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+.home_page {}
+/*bjk*/
+.bjk {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: url('../images/bjk1.jpg') no-repeat;
+	background-size: 100% 166px;
+	width: 100%;
+	height: 158px;
+	padding-top: 8px;
+	z-index: 999;
+}
+.search {
+	position: relative;
+	margin: 0 12px;
+	height: 38px;
+	background: #02654f;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.search input {
+	text-align: center;
+	position: relative;
+	color: #ffffff;
+	width: 90%;
+	padding: 0 5%;
+	height: 38px;
+	line-height: 38px;
+	border: 0;
+	display: block;
+	font-size: 0.94em;
+	background: transparent;
+	background: #02654f;
+	border-radius: 4px;
+}
+.search .Magnifier {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	width: 18px;
+	margin-left: -80px;
+}
+.search .hide {display: none;}
+.search span {
+	font-size: 0.94em;
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 210px;
+	line-height: 38px;
+	left: 50%;
+	margin-left: -105px;
+}
+/*interlinkage*/
+.interlinkage {height: 90px;padding-top: 18px;}
+.interlinkage a {float: left;width: 33%;}
+.interlinkage a.wdkq {width: 34%;}
+.interlinkage a img {display: block;width: 50px;height: 50px;}
+.interlinkage a.wdkq img {width: 62px;}
+.interlinkage a.grzx img {width: 46px;}
+.interlinkage a span {
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+}
+/*location_more*/
+.location_more {
+	position: absolute;
+	top: 166px;
+	left: 0;
+	background: #ffffff;
+	border-top: 10px solid #ebebeb;
+	border-bottom: 30px solid #ebebeb;
+	width: 100%;
+}
+.location_more .more {
+	height: 42px;
+	border-top: 10px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	background: #ffffff;
+	width: 100%;
+	z-index: 999;
+	overflow: hidden;
+}
+.more span {float: left;line-height: 42px;font-size: 0.94em;padding-left: 12px;}
+.more a {float: right;line-height: 42px;font-size: 0.94em;padding-right: 12px;}
+.more a img {display: inline-block;width: 13px;padding-left: 6px;}
+/*advertisement*/
+.advertisement {width: 100%;}
+.advertisement a {display: block;width: 100%;}
+.advertisement a img {width: 100%;display: block;}
+/*loc_list*/
+.loc_list {}
+.loc_list li {
+	/*height: 50px;*/
+	border-top: 5px solid #ebebeb;
+	padding: 14px 12px 0;
+}
+/*.loc_list a {display: block;}
+.loc_list a span {float: left;width: 76%;line-height: 50px;}
+.loc_list a b {float: right;line-height: 50px;}*/
+
+/*loc_list*/
+.loc_list .shop,.loc_list .Location {
+	position: relative;
+	display: block;
+	padding-left: 32px;
+}
+.loc_list .shop {padding-bottom: 10px;}
+.loc_list a img {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 22px;
+	height: 22px;
+}
+.loc_list .shop span {
+	line-height: 24px;
+	word-break: break-all;
+}
+.loc_list .Location {height: 35px;border-top: 1px solid #e5e5e5;overflow: hidden;}
+.Location span {
+	color: #979797;
+	float: left;
+	width: 74%;
+	line-height: 35px;
+	font-size: 0.75em;
+}
+.Location .distance {
+	float: right;
+	color: #979797;
+	font-size: 0.63em;
+	line-height: 35px;
+	text-align: right;
+}
+.loc_list a.Location img{
+	width: 20px;
+	height: 16px;
+	top: 8px;
+}
+/*help*/
+.home_page .help {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #000000;
+	text-align: center;
+	height: 30px;
+}
+.home_page .help a,.home_page .help span {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 0.76em;
+	line-height: 30px;
+}

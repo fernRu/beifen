@@ -1,0 +1,148 @@
+/*公用隐藏*/
+.contList .text .dm {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*lentIndex*/
+body {
+	background: url('../images/zj_bg2.png') no-repeat;
+	background-size: 100%;
+}
+.smzj {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+.smzj .smts {color: #ffffff;padding: 6% 0 4%;text-align: center;}
+.smzj .sys {}
+.sys a {display: block;}
+.sys a img {display: block;width: 40%;}
+/*bottomDw*/
+.bottomDw {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+/*background*/
+.bottomDw .background {width: 100%;}
+.background img {display: block;width: 100%;}
+/*contList*/
+.contList {background: #ffffff;}
+.bottomDw .text {
+	position: relative;
+	height: 36px;
+	padding: 0 80px 0 38px;
+	border-bottom: 1px solid #ebebeb;
+	background: #ffffff;
+	overflow: hidden;
+}
+.bottomDw .text img {
+	position: absolute;
+	left: 12px;
+	top: 9px;
+	width: 23px;
+}
+.bottomDw .text .dm {display: block;line-height: 36px;font-size: 0.76em;color: #363636;}
+.bottomDw .text .yscg {
+	position: absolute;
+	right: 12px;
+	top: 0;
+	line-height: 36px;
+	color: #00cc99;
+	text-align: right;
+	font-size: 0.76em;
+}
+/*列表内容list*/
+.contList .list {}
+.list .listCon {display: block;position: relative;padding: 10px 84px 10px 116px;height: 100px;overflow: hidden;}
+.listCon .LeftImg {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 100px;
+	height: 100px;
+}
+.listCon .book {
+	color: #363636;
+	margin-top: 4px;
+	line-height: 20px;
+	display: block;
+	font-size: 0.88em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.listCon .price {
+	color: #00cc99;
+	display: block;
+	padding-top: 8px;
+	font-size: 0.76em;
+}
+.listCon .price b {color: #00cc99;}
+.list .Lright {position: absolute;right: 10px;top: 10px;font-size: 0.88em;}
+.Lright span {display: block;color: #363636;line-height: 26px;}
+.Lright .day_num {color: #9d9d9d;font-size: 0.76em;text-align: right;}
+.Lright .day_num b {
+	display: inline-block;
+	font-weight: 0;
+	color: #9d9d9d;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.listCon .total {
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+	text-align: right;	
+}
+.listCon .total span {color: #3a3e41;font-size: 0.76em;}
+.total span.hj {margin-left: 2px;}
+.contList .DdBut {
+	border-top: 1px solid #f2f2f2;
+	min-height: 26px;
+	padding: 6px 10px;
+	text-align: right;
+}
+.DdBut a {
+	display: inline-block;
+	color: #00cc99;
+	font-size: 0.88em;
+	border: 1px solid #00cc99;
+	border-radius: 8px;
+	padding: 2px 8px;
+	margin: 4px 2px;
+}
+/*prompt*/
+.prompt {background: #c4c4c4;padding: 5px 12px;}
+.prompt img {
+	float: left;
+	width: 21px;
+	height: 21px;
+}
+.prompt span {font-size: 0.70em;line-height: 20px;display: inline-block;margin-left: 10px;}
+/*help*/
+.bottomDw .help {background: #000000;text-align: center;height: 32px;}
+.bottomDw .help a,.bottomDw .help span {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 0.76em;
+	line-height: 30px;
+}
+/*wzjdd*/
+.wzjdd {background: #ffffff;height: 120px;overflow: hidden;}
+.wzjdd img {display: block;width: 96px;padding: 8px 0;}
+.wzjdd p {
+	text-align: center;
+	color: #363636;
+	font-size: 0.76em;
+	border-top: 1px solid #f2f2f2;
+	line-height: 40px;
+}
+/*@media screen and (min-width: 320px){
+	.smzj .smts {padding: 18% 0 6%;}
+}*/

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="css/itm_index.css">
+</head>
+<body>
+	<!-- 爱喜阅itm首页 -->
+	<div class="ItmIndex">
+		<!-- 广告位 -->
+		<div class="adw"><a href="#"><img src="images/ad2.jpg"></a></div>
+		<!-- 列表 -->
+		<div class="ItmList">
+			<!-- 购买&搜索&余额 -->
+			<div class="gm_ss">
+				<a class="gm_left" href="#">
+					<img src="images/purchase.png" />
+					<span>购买</span>
+				</a>
+				<div class="ss_right">
+					<a class="ss_top" href="#">
+						<img src="images/search.png" />
+						<span>搜索</span>
+					</a>
+					<a class="balance" href="#">余额：<span>30</span>元</a>
+				</div>
+			</div>
+			<!-- 帮助&还书&客服&借书 -->
+			<div class="hs_js">
+				<div class="hs_left">
+					<a class="bz" href="#">
+						<span>帮助</span>
+					</a>
+					<div class="hs_kf">
+						<a class="hs" href="#">
+							<span class="huan">还</span>
+							<span class="books">书</span>
+						</a>
+						<a class="kf" href="#"><span>客服</span></a>
+					</div>
+				</div>
+				<a class="js" href="#">
+					<img src="images/Borrow_books.png" />
+					<span>借书</span>
+				</a>
+			</div><!-- end -->
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/pageResponse.min.js"></script>
+<!-- <script type="text/javascript" src="js/mb.js"></script> -->
+<script type="text/javascript">
+	//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
+window.onload = window.onresize = function(){
+    pageResponse({
+        selectors : '.ItmIndex',     //模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover 
+        // width : '384',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        // height : '605',    //输入页面的高度，只支持输入数值，默认高度为504px
+        width : '375',
+        height : '605',
+        // top:'0'
+        // origin : 'left top 0',
+    }); 
+}
+
+// var page = new pageResponse({  
+//     class: '.ItmIndex',  
+//     mode: 'contain',  
+//     width: '375',  
+//     height: '667',  
+//     template : 2  
+// }); 
+
+</script>
+</html>

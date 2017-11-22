@@ -1,0 +1,139 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, img {
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	color: #333333;
+}
+body {background: #f2f2f2;}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #222222;-webkit-tap-highlight-color:transparent;}
+i {font-style: normal;}
+img {border: 0;}
+.clear {clear: both;}
+/*公用隐藏*/
+.contList .text .dm {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*my_order*/
+.my_order {}
+/*header*/
+.o_header {padding: 10px 0;position: relative;text-align: center;background: #ffffff;font-size: 1.2em;}
+.o_header span {color: #222222;}
+.o_header .return {position: absolute;left: 12px;width: 13px;top: 11px;vertical-align: middle;}
+.o_header .return img {display: block;width: 100%;}
+/*my_sel*/
+.my_sel {margin-top: 5px;background: #ffffff;height: 27px;overflow: hidden;}
+.my_sel li {float: left;width: 25%;text-align: center;-webkit-tap-highlight-color:transparent;}
+.my_sel li span {
+	line-height: 23px;
+	padding:2px 3px 0;
+	font-size: 0.76em;
+	display: inline-block;
+	cursor: pointer;
+	color: #757575;
+}
+.my_sel li.sel span {background: url('../images/jt.png') no-repeat bottom;border-bottom: 2px solid #00c789;background-size: 6px;}
+/*content*/
+/*.content {background: #ffffff;}*/
+/*contList*/
+.contList {}
+.contList li {background: #ffffff;margin-top: 5px;}
+.contList .text {
+	position: relative;
+	height: 36px;
+	padding: 0 80px 0 38px;
+	border-bottom: 1px solid #f2f2f2;
+	overflow: hidden;
+}
+.contList .text img {
+	position: absolute;
+	left: 12px;
+	top: 9px;
+	width: 18px;
+}
+.contList .text .dm {display: block;line-height: 36px;font-size: 0.76em;color: #363636;}
+.contList .text .yscg {
+	position: absolute;
+	right: 12px;
+	top: 0;
+	line-height: 36px;
+	color: #00cc99;
+	text-align: right;
+	font-size: 0.76em;
+}
+/*列表内容list*/
+.contList .list {}
+.list .listCon {display: block;position: relative;padding: 10px 84px 10px 116px;height: 100px;overflow: hidden;}
+.listCon .LeftImg {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 100px;
+	height: 100px;
+}
+.listCon .book {
+	color: #363636;
+	margin-top: 4px;
+	line-height: 20px;
+	display: block;
+	font-size: 0.88em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.listCon .price {
+	color: #00cc99;
+	display: block;
+	padding-top: 8px;
+	font-size: 0.76em;
+}
+.listCon .price b {color: #00cc99;}
+.list .Lright {position: absolute;right: 10px;top: 10px;font-size: 0.88em;}
+.Lright span {display: block;color: #363636;line-height: 26px;}
+.Lright .day_num {color: #9d9d9d;font-size: 0.76em;text-align: right;}
+.Lright .day_num b {
+	display: inline-block;
+	font-weight: 0;
+	color: #9d9d9d;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.listCon .total {
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+	text-align: right;	
+}
+.listCon .total span {color: #3a3e41;font-size: 0.76em;}
+.total span.hj {margin-left: 2px;}
+.contList .DdBut {
+	border-top: 1px solid #f2f2f2;
+	min-height: 26px;
+	padding: 6px 10px;
+	text-align: right;
+}
+.DdBut a {
+	display: inline-block;
+	color: #00cc99;
+	font-size: 0.88em;
+	border: 1px solid #00cc99;
+	border-radius: 8px;
+	padding: 2px 8px;
+	margin: 4px 2px;
+}
+/*无订单*/
+.contList .wdd {background: #f2f2f2;width: 100%;text-align: center;padding-top: 52px;}
+.contList .wdd img {width: 50%;display: block;}
+.contList .wdd p {color: #222222;font-size: 1.2em;padding-top: 26px;}
+/*prompt*/
+.prompt {background: #c4c4c4;padding: 5px 12px;}
+.prompt img {
+	float: left;
+	width: 21px;
+	height: 21px;
+}
+.prompt span {font-size: 0.70em;line-height: 20px;display: inline-block;margin-left: 10px;}
+/**/

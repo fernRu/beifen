@@ -1,0 +1,114 @@
+/*禁止复制、选中文本*/
+p{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+/*押金提现deposit_tx*/
+body {background: #f2f2f2;}
+.deposit_tx {}
+/*dt_nav*/
+.dt_nav {height: 44px;padding: 0 12px;overflow: hidden;background: #ffffff;}
+.dt_nav .return {float: left;width: 12px;margin-top: 12px;}
+.dt_nav .return img {display: block;width: 12px;}
+.dt_nav .dtn_txt {
+	display: block;
+	padding-right: 12px;
+	font-size: 1.12em;
+	line-height: 44px;
+	text-align: center;
+}
+/*my_deposit*/
+.my_deposit {
+	position: relative;
+	margin-top: 5px;
+	height: 72px;
+	padding: 0 114px 0 12px;
+	overflow: hidden;
+	background: #ffffff;
+}
+.my_deposit .wdyj_txt {
+	color: #676767;
+	font-size: 0.88em;
+	line-height: 26px;
+	word-break: break-all;
+}
+.my_deposit .money {
+	color: #00cc99;
+	font-size: 2.20em;
+	line-height: 26px;
+	word-break: break-all;
+}
+.money span {color: #00cc99;}
+.my_deposit .yjtx_lj {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	font-size: 1.13em;
+	background: #00cc99;
+	width: 114px;
+	color: #ffffff;
+	line-height: 72px;
+}
+/*dt_explain*/
+.dt_explain {margin-top: 1px;padding: 6px 12px 14px;background: #ffffff;}
+.dt_explain p {color: #626262;font-size: 0.88em;line-height: 18px;word-break: break-all;padding: 2px 0;}
+.dt_explain .txsm {color: #444444;padding-bottom: 4px;}
+/*confirm_tx*/
+.confirm_tx .conf_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../../images/bg.png');
+	z-index: 99;
+}
+.confirm_tx .tx_cont {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding-top: 16px;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 999;
+	background: #ffffff;
+	border-radius: 6px;
+	width: 300px;
+}
+.tx_cont .conf_txt,.tx_cont .conf_ts {
+	padding-bottom: 6px;
+	color: #323232;
+	font-size: 0.94em;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	overflow: hidden;
+}
+.tx_cont .conf_ts {padding-top: 0;}
+/**/
+.tx_cont .conf_but {
+	margin-top: 16px;
+	border-top: 1px solid #eeeeee;
+	height: 42px;
+	overflow: hidden;
+}
+.conf_but .qrtx,.conf_but .qxtx {
+	float: left;
+	width: 50%;
+	border: 0;
+	background: #ffffff;
+	line-height: 42px;
+	color: #323232;
+	font-size: 0.94em;
+	border-radius: 6px;
+	text-align: center;
+	outline: none;
+}
+.conf_but .qxtx span {
+	display: block;
+	border-left: 1px solid #eeeeee;
+	line-height: 42px;
+}

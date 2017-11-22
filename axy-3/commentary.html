@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/xq.css">
+</head>
+<body style="background: #ffffff;">
+	<!-- 爱喜阅-评论内容 -->
+	<div class="commentary">
+		<!-- nav -->
+		<div class="nav2">
+			<a class="return" href="#"><img src="images/arrow2.png"></a>
+			<span>恋爱的贡多拉的书评恋爱的贡多拉的书评</span>
+		</div><!-- nav-end -->
+		<!-- content-内容 -->
+		<div class="ComList">
+			<ul>
+				<li>
+					<a class="CLimg" href="#"><img src="images/img5.jpg" /></a>
+					<div class="CLcom">
+						<p class="yhm">
+							<a class="name" href="#">一切随风一切随风一切随风一切随风一切随风</a>
+							<span class="time">07-26</span>
+						</p>
+						<p class="com">
+							<a href="commentaryHF.html">这本可不是什么恋爱推理，是东野叔擅长的黑色短篇的加长版，大体说的是：浪子回头都是扯淡大体说的是：浪子.这本可不是什么恋爱推理，是东野叔擅长的黑色短篇的加长版，大体说的是：浪子回头都是扯淡大体说的是：浪子</a>
+						</p>
+						<p class="dz_xx">
+							<a class="info" href="commentaryHF.html"><img src="images/plxx.png" /></a>
+							<a class="dianzan" href="#"><b></b><span>999+</span></a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<a class="CLimg" href="#"><img src="images/img5.jpg" /></a>
+					<div class="CLcom">
+						<p class="yhm">
+							<a class="name" href="#">一切随风</a>
+							<span class="time">07-26</span>
+						</p>
+						<p class="com">
+							<a href="commentaryHF.html">这本可不是什么恋爱推理，是东野叔擅长的黑色短篇的加长版.</a>
+						</p>
+						<p class="dz_xx">
+							<a class="info" href="#"><img src="images/plxx.png" /></a>
+							<a class="dianzan" href="#"><b class="bs"></b><span>999+</span></a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<a class="CLimg" href="#"><img src="images/img5.jpg" /></a>
+					<div class="CLcom">
+						<p class="yhm">
+							<a class="name" href="#">一切随风</a>
+							<span class="time">07-26</span>
+						</p>
+						<p class="com">
+							<a href="commentaryHF.html">这本可不是什么恋爱推理.</a>
+						</p>
+						<p class="dz_xx">
+							<a class="info" href="#"><img src="images/plxx.png" /></a>
+							<a class="dianzan" href="#"><b class="bs"></b><span>999+</span></a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 写评论review -->
+	<div class="review"><a class="xpl" href="#">写评论</a></div>
+	<!-- 取消发布 -->
+	<div class="fbxx" style="display: none;">
+		<div class="qx_fb">
+			<a class="qx" href="#">取消</a>
+			<!-- 回复消息是发布变颜色green -->
+			<a class="fb" href="#">发布</a>
+			<p class="text">
+				<textarea cols="4" placeholder="回复"></textarea>
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	// 写评论
+	$('.review').mouseover(function(){
+		$('.review').hide();
+		$('.fbxx').show();
+	});
+	// 取消
+	$('.fbxx .qx').click(function(){
+		$('.fbxx').hide();
+		$('.review').show();
+	});
+	// 发布
+	$('.fbxx .fb').click(function(){
+		$('.fbxx').hide();
+		$('.review').show();
+	});
+	// 变色
+	// $('.fbxx .text textarea').click(function(){
+	// 	$('.fb').addClass('green');
+	// });
+	// $('.ComList .info').mouseover(function(){
+	// 	 $('.review').hide();
+	// 	$('.fbxx').show();
+	// });
+</script>
+</html>

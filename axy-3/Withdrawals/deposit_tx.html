@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/deposit_tx.css">
+</head>
+<body>
+	<!-- ibookway-押金提现 -->
+	<div class="deposit_tx">
+		<!-- nav -->
+		<div class="dt_nav">
+			<a class="return" href="#"><img src="../images/arrow.png"></a>
+			<!-- 搜索 -->
+			<span class="dtn_txt">押金提现</span>
+		</div>
+		<!-- 我的押金 -->
+		<div class="my_deposit">
+			<!--  -->
+			<p class="wdyj_txt">我的押金</p>
+			<!-- 金额 -->
+			<p class="money">¥<span>100.00</span></p>
+			<!-- 押金提现 -->
+			<a class="yjtx_lj" href="javascript:void(0);">押金提现</a>
+		</div>
+		<!-- 提现说明 -->
+		<div class="dt_explain">
+			<p class="txsm">提现说明&nbsp;：</p>
+			<p class="dte_txt">1.为保证图书完整性，需缴纳押金。</p>
+			<p>2.押金支付成功后即可使用iBookway借书功能。</p>
+			<p>3.书籍完好归还后，可申请押金提现，退款大约3-7个工作日内退至原支付账户。</p>
+			<p>4.押金退还后如果需要借阅书籍，需再次充值押金。</p>
+		</div><!-- dt_explain-end -->
+		<!-- 确认提现 -->
+		<div class="confirm_tx" style="display: none;">
+			<div class="conf_bg"></div>
+			<div class="tx_cont">
+				<p class="conf_txt">确认提现</p>
+				<p class="conf_ts">提现后想要借书需要重新充值！</p>
+				<div class="conf_but">
+					<button class="qrtx">确认提现</button>
+					<!-- 取消提现 -->
+					<a class="qxtx" href="javascript:void(0);"><span>取消提现</span></a>
+				</div>
+			</div>
+		</div>
+	</div><!-- deposit_tx-end -->
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	// 点击显示隐藏
+	$('.my_deposit .yjtx_lj').click(function(){
+		$('.confirm_tx').show();
+	});
+	$('.conf_bg').click(function(){
+		$('.confirm_tx').hide();
+	});
+	$('.confirm_tx .qxtx').click(function(){
+		$('.confirm_tx').hide();
+	});
+</script>
+<script type="text/javascript">
+// 禁止移动网页下拉
+	document.ontouchmove = function (e) {
+		e.preventDefault();
+	}
+</script>
+</html>

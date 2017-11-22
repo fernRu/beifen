@@ -1,0 +1,26 @@
+body {background: #f2f2f2;}
+/*帮助中心*help_center*/
+/*hc_nav*/
+.hc_nav {
+	position: fixed;
+	height: 44px;
+	left: 0;
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+}
+.hc_nav .return {position: absolute;left: 12px;top: 11px;width: 12px;}
+.hc_nav .return img {display: block;width: 12px;}
+.hc_nav .hcn_txt {display: block;font-size: 1.12em;text-align: center;line-height: 46px;}
+/*hc_cont*/
+.help_center .hc_cont {padding-top: 54px;}
+.hc_cont li {padding: 2px 24px 2px 12px;}
+.hc_cont .hcc_bt {font-size: 0.94em;color: #00cc99;line-height: 30px;}
+.hcc_bt b {display: inline-block;width: 12px;}
+.hc_cont .hcc_step {padding-left: 12px;display: none;}
+.hc_cont .hccSel .hcc_step {display: block;}
+.hcc_step p {font-size: 0.88em;color: #323232;line-height: 20px;padding: 2px 0;text-align:justify;}
+
+
+
+

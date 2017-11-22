@@ -1,0 +1,77 @@
+/*付款方式*/
+button:focus { outline: none;}
+.PopPayMet {}
+.tmbj {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/bg3.png');
+	z-index:1000;
+}
+.payment_method {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #f2f2f2;
+	z-index:9999;
+}
+.choice {height: 44px;background: #ffffff;padding: 0 40px 0 10px;overflow: hidden;}
+.choice a {float: left;width: 30px;margin-top: 7px;}
+.choice a img {display: block;width: 30px;}
+.choice span {display: block;text-align: center;line-height: 44px;}
+.jyj_wx {
+	background: #ffffff;
+	margin-top: 1px;
+	padding: 0 12px;
+}
+.jyj_wx label {
+	display: block;
+	height: 60px;
+	background: #ffffff;
+	position: relative;
+	border-bottom: 1px solid #f2f2f2;
+}
+.jyj_wx label img {float: left;width: 34px;height: 34px;margin-top: 13px;}
+.jyj_wx label img.wxfk {width: 38px;height: 32px;}
+.jyj_wx label span {
+	float: left;
+	color: #363636;
+	font-size: 1.12em;
+	line-height: 60px;
+	padding-left: 20px;
+}
+.jyj_wx label .balance,.jyj_wx label b {color: #979797;}
+.jyj_wx label .balance {padding-left: 4px;}
+.jyj_wx input {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 20px;
+}
+.jyj_wx i {
+	position: absolute;
+	right: 2px;
+	top: 20px;
+	width: 21px;
+	height: 21px;
+	background: url('../images/yuan1.png') no-repeat #ffffff;
+	background-size: 20px;
+	z-index: 99999;
+}
+.jyj_wx .sel2 i {background: url('../images/yuan2.png') no-repeat #ffffff;background-size: 20px;}
+/*.payment_method .qrzf {margin-top: 10px;}*/
+.payment_method .qrzf {
+	margin-top: 10px;
+	color: #ffffff;
+	background: #00cc99;
+	font-size: 1.14em;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	border: 0;
+	text-align: center;
+}

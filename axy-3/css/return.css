@@ -1,0 +1,83 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, img {
+	padding: 0;
+	margin: 0 auto; 
+	font: 1em "Microsoft YaHei","微软雅黑";
+	color: #333333;
+}
+body {background: #f2f2f2;}
+ul, li {list-style: none;text-decoration: none;}
+a {text-decoration: none;color: #222222;}
+i {font-style: normal;}
+img {border: 0;}
+/*归还return*/
+/*归还开始*/
+.progress {background: #ffffff;padding: 20px 0 10px;}
+.progress .jdt {padding: 0 28px;}
+.jdt img {display: block;width: 100%;}
+.Ptext {height: 30px;line-height: 30px;padding: 0 12px;overflow: hidden;margin-top: 16px;}
+.Ptext span {float: left;width: 33%;text-align: left;color: #757575;font-size: 0.9em;}
+.Ptext span.jqsh {float: left;width: 34%;text-align: center;}
+.Ptext span.ddys {text-align: right;}
+.prompt {background: #00c789;color: #ffffff;text-align: center;font-size: 0.96em;padding: 10px 0;margin-top: 6px;}
+/*内容*/
+.Pcontent {background: #ffffff;}
+/*Con_bt*/
+.Con_bt {padding: 0 12px;}
+.Con_bt .bt_time {height: 20px;overflow: hidden;margin-bottom: 8px;}
+.bt_time img {width: 14px;float: left;margin-top: 4px;}
+.bt_time .local {
+	float: left;
+	font-size: 0.9em;
+	line-height: 24px;
+	margin-left: 4px;
+	width: 50%;
+	height:20px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow: hidden;
+}
+.Con_bt .xdsj,.Ono {height: 20px;overflow: hidden;}
+.Con_bt .xdsj span, .Ono span {color: #8c8c8c;font-size: 0.9em;line-height: 20px;}
+/*nr*/
+.Con_list {padding-top:8px;}
+.Con_list .list {padding: 2px 12px;height: 90px;overflow: hidden;}
+.list .Limg {float: left;width: 60%;}
+.Limg img {width: 56px;float: left;}
+.Limg span {
+	height: 20px;
+	width: 60%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	float: left;
+	color: #363636;
+	margin-top: 10px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.list .Lright {float: right;width: 30%;text-align: right;margin-top: 8px;}
+.list .Lright span {color: #363636;font-size: 1.1em;line-height: normal;}
+.Lbutton {border-top: 1px solid #f2f2f2;text-align: right;padding: 4px 12px 12px;}
+.Lbutton a{
+	display: inline-block;
+	border:1px solid #919191;
+	color: #474747;
+	font-size: 0.90em;
+	border-radius: 3px;
+	padding: 3px 8px;
+	margin: 8px 0 0 4px;
+	-webkit-tap-highlight-color:transparent;
+}
+/*验收*/
+.YanShou .Lbutton a {padding: 3px 20px;}
+/*租借确认*/
+.zjqr .buffer {background: #00c789;text-align: center;margin-top: 6px;}
+.buffer span {
+	color: #ffffff;line-height: normal;
+	display: inline-block;font-size: 0.96em;
+	padding: 10px 30px 10px 0;
+	background: url('../images/rank.gif') no-repeat center right;
+	background-size: 20px
+}

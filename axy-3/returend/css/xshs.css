@@ -1,0 +1,182 @@
+/*线上还书*/
+/*xshs*/
+.xshs {}
+/*xshs_top*/
+.xshs_top {
+	height: 38px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+	z-index: 99;
+}
+.xshs_top .return {float: left;width: 12px;padding: 8px 0 0 12px;}
+.xshs_top img {display: block;width: 12px;height: 21px;}
+.xshs_top .x_txt {
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	padding-right: 12px;
+	color: #000000;
+	font-size: 0.94em;
+}
+
+/*xshsList*/
+.xshsList {margin-top: 38px;border-top: 1px solid #f2f2f2;}
+/*xl_ddxx*/
+.xl_ddxx {position: relative;padding-top: 18px;}
+.xl_ddxx .dd_con {padding: 0 84px 0 105px;min-height: 98px;}
+.xl_ddxx .dd_img {position: absolute;left:10px; top: 18px;}
+.dd_img img {display: block;width: 80px;height: 80px;overflow: hidden;}
+.xl_ddxx .dd_right {
+	position: absolute;
+	right:16px; 
+	top: 18px;
+}
+/*dd_con*/
+.dd_con .dd_txt,.dd_con .dd_price,.dd_right .zjjg {
+	color: #323232;
+	font-size: 0.94em;
+	line-height: 24px;
+}
+.dd_con .dd_txt {word-break: break-all;font-weight: bold;}
+/*dd_right*/
+.dd_right .day_num {
+	font-size: 0.75em;
+	color: #878787;
+	line-height: 24px;
+	text-align: right;
+}
+.day_num span,.day_num b {display: inline-block;color: #878787;}
+.day_num b {font-size: 0.75em;}
+/*total*/
+.xl_ddxx .total {
+	border-top: 1px solid #f2f2f2;
+	padding: 0 16px;
+	height: 36px;
+	text-align: right;
+	overflow: hidden;
+}
+.total p {
+	float: right;
+	margin-left: 14px;
+	line-height: 36px;
+	color: #323232;
+}
+.total p span {color: #323232;}
+/*receiving_address*/
+.receiving_address,.kdxz, .remarks {border-top: 10px solid #f2f2f2;padding: 8px 16px;}
+.receiving_address span {
+	line-height: 28px;
+	word-break: break-all;
+	color: #323232;
+	font-size: 0.94em;
+}
+.receiving_address li {position: relative;padding: 2px 0 2px 74px;}
+.receiving_address li .ra_txt {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	color: #878787;
+}
+.receiving_address .sjr .kong {color: #ffffff;opacity: 0;}
+/*kdxz*/
+.kdxz {position: relative;}
+.kdxz .xz_con {height: 30px;overflow: hidden;}
+.xz_con .xz_txt {
+	line-height: 30px;
+	font-size: 0.94em;
+	color: #323232;
+}
+.xz_con .mrxz {
+	float: right;
+	line-height: 30px;
+	font-size: 0.75em;
+	color: #323232;
+}
+.mrxz .default {color: #00cc99;}
+.mrxz a {
+	padding-right: 15px;
+	background: url('../images/xjt2.png') no-repeat right;
+	background-size: 10px;
+}
+.xz_con .kd_sel {
+	position: absolute;
+	right: 16px;
+	top: 38px;
+	background: #ffffff;
+	padding: 6px 15px;
+	border: 1px solid #c1c1c1;
+	max-height: 94px;
+	overflow: auto;
+}
+.kd_sel a {
+	font-size: 0.75em;
+	display: block;
+	line-height: 24px;
+	text-align: right;
+}
+/*ydbh*/
+.kdxz .ydbh {height: 70px;overflow: hidden;}
+.ydbh .bh_txt {
+	font-size: 0.75em;
+	color: #323232;
+	line-height: 18px;
+}
+.ydbh .srbh {
+	margin-top: 8px;
+	height: 20px;
+	padding: 7px 4px;
+	border: 1px solid #c1c1c1;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.srbh input {
+	height: 20px;
+	line-height: 20px;
+	font-size: 0.82em;
+	/*justify-content: center;*/
+	border: 0;
+	width: 100%;
+}
+/*remarks*/
+.remarks {}
+.remarks .rmk_txt {
+	color: #323232;
+	font-size: 0.75em;
+	line-height: 20px;
+}
+.remarks .textbox {
+	padding: 4px 6px;
+	border: 1px solid #c1c1c1;
+	margin-top: 6px;
+	border-radius: 6px;
+}
+.textbox textarea {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: 120px;
+	line-height: 20px;
+	padding: 0;
+	margin:0;
+	resize: none;
+	overflow: auto;
+}
+
+/*submit_butt*/
+.submit_butt {
+	display: block;
+	margin: 8px auto 16px;
+	outline: none;
+	background: #00cc99;
+	color: #ffffff;
+	font-size: 1.13em;
+	height: 40px;
+	border: 0;
+	/*margin: 0 16px;*/
+	width: 92%;
+	border-radius: 5px;
+}

@@ -1,0 +1,103 @@
+@charset "utf-8";
+body, div, p, a, ul, li, span, b, input, img,button{
+	padding: 0;
+	margin: 0; 
+	font-size: 15px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	/*font: 15px "Microsoft YaHei","微软雅黑";*/
+	color: #222222;
+}
+/*navDd*/
+.navDd {height: 38px;padding: 0 12px;background: #ffffff;overflow: hidden;}
+.navDd a,.navDd .confirm {float: left;font-size: 0.94em;line-height: 38px;}
+.navDd a.grzx {float: right;}
+.navDd .return img {float: left;width: 12px;margin: 8px 10px 0 0;}
+/*modify*/
+.modify {padding: 12px 12px 60px;}
+/*xm_dh*/
+.xm_dh, .mod_address {
+	border: 1px solid #a0a0a0;
+	background: #ffffff;
+	border-radius: 5px;
+	padding: 0 14px;
+}
+.xm_dh p,.xm_dh p span {
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.10em;
+}
+.xm_dh p.number {border-top: 1px solid #e3e3e3;}
+.xm_dh p input,.doorplate input {
+	height: 20px;
+	line-height: 20px;
+	padding-left: 20px;
+	width: 70%;
+	border: 0;
+	font-size: 1.10em;
+	background: transparent;
+}
+/*mod_address*/
+.mod_address {margin-top: 20px;position: relative;}
+/*doorplate*/
+.doorplate,.default {
+	border-top: 1px solid #e3e3e3;
+	padding: 10px 0;
+}
+.doorplate span {
+	display: block;
+	font-size: 0.3rem;
+	padding-bottom: 8px;
+}
+.doorplate input {
+	display: block;
+	padding: 0;
+	width: 100%;
+}
+/*切换*/
+.default {position: relative;height: 50px;}
+.default input[type="checkbox"] + label {
+	position: absolute;
+	left: 0;
+	top: 12px;
+	display: block;
+	height: 22px;
+	line-height: normal;
+    cursor: pointer;
+    font-size: 1.12em;
+    padding-left: 30px;
+    z-index: 99;
+}
+[id^="checkbox-"] + label {
+	/*padding: 9px;*/
+    vertical-align: middle;
+    background: url('../../images/choice.png') 0 0px no-repeat;
+    background-size: 21px;
+}
+[id="checkbox-1"]:checked + label { 
+   background: url('../../images/choice.png') 0 -39px no-repeat;
+    background-size: 21px;
+}
+.default input {
+	width: 21px;
+	height: 21px;
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+    filter:alpha(opacity=0);
+    z-index: 999;
+}
+/*bcdz*/
+.bcdz {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border: 0;
+	height: 50px;
+	line-height: 50px;
+	color: #ffffff;
+	background: #00cc99;
+	font-size: 1.2em;
+}
+
+

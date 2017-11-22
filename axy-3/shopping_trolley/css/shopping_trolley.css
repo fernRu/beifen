@@ -1,0 +1,101 @@
+/*购物车shopping_trolley*/
+body {background: #f2f2f2;}
+.shopping_trolley {}
+/*st_nav*/
+.st_nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 38px;
+	background: #ffffff;
+	overflow: hidden;
+	z-index: 99;
+}
+.st_nav .gwc_txt {display: block;font-size: 0.94em;line-height: 38px;text-align: center;}
+.st_nav .return {position: absolute;left: 12px;top: 10px;width: 15px;overflow: hidden;}
+.return img {display: block;width: 11px;margin: 0;}
+/*st_content*/
+.st_content {margin: 39px 0 55px;}
+/*stc_screen*/
+.stc_screen {height: 38px;padding: 0 12px;overflow: hidden;background: #ffffff;}
+.stc_screen .yxsp,.stc_screen .empty {float: left;font-size: 0.94em;line-height: 38px;}
+.stc_screen .empty {float: right;color: #979797;}
+/*commodity*/
+.commodity {margin-top: 1px;}
+.commodity li {background: #ffffff;margin-bottom: 5px;min-height: 200px;}
+.commodity label {
+	display: block;
+	position: relative;
+	height: 114px;
+	padding: 24px 12px 24px 162px;
+	overflow: hidden;
+}
+.commodity label input {
+	position: absolute;
+	left: 12px;
+	top: 70px;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+}
+.commodity .comm_img {
+	position: absolute;
+	left: 42px;
+	top: 24;
+	width: 114px;
+	height: 114px;
+	overflow: hidden;
+}
+.commodity .comm_name,.comm_zz {
+	color: #323232;
+	line-height: 20px;
+	word-break: break-all;
+	padding-top: 6px;
+}
+.commodity .comm_zz {
+	color: #979797;
+	font-size: 0.82em;
+}
+.comm_zz span {color: #979797;}
+.commodity li .yuan {
+	position: absolute;
+	left: 12px;
+	top: 40px;
+	width: 23px;
+	height: 23px;
+	background: url('../images/yuan1.png') no-repeat;
+	background-size: 23px;
+	overflow: hidden;
+}
+.commodity li.commSel .yuan {
+	background: url('../images/yuan2.png') no-repeat;
+	background-size: 23px;
+}
+/*borrow_fee*/
+.borrow_fee {
+	border-top: 1px solid #f2f2f2;
+	height: 50px;
+	padding: 0 12px;
+	overflow: hidden;
+}
+.borrow_fee span {color: #323232;font-size: 0.82em;line-height: 50px;}
+.borrow_fee span.jy_price,.jy_price b {color: #00cc99;}
+.borrow_fee span.illustrate {color: #979797;}
+/*settle_accounts*/
+.settle_accounts {
+	border: 0;
+	background: inherit;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 48px;
+	line-height: 48px;
+	background: #00cc99;
+	color: #ffffff;
+	font-size: 1.13em;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	z-index: 99;
+}

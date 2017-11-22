@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<style type="text/css">
+	/*entrance*/
+	body {
+		background: url('images/entrance.png') no-repeat;
+		background-size: 100%;
+	}
+	.entrance li {margin-top: 22px;text-align: center;}
+	.entrance li a {display: block;padding: 0 2px;}
+	.entrance li a img {display: block;width: 100%;}
+</style>
+</head>
+<body>
+	<!-- ibookway-入口 -->
+	<div class="entrance">
+		<ul>
+			<!-- 自助借还 -->
+			<li class="zzjh">
+				<a href="#"><img class="bk_img" src="images/zzjh.png" /></a>
+			</li>
+			<!-- 到店借还 -->
+			<li class="zzjh">
+				<a href="#"><img class="bk_img" src="images/ddjh.png" /></a>
+			</li>
+			<!-- 谁手借还 -->
+			<li class="zzjh">
+				<a href="#"><img class="bk_img" src="images/ssjh.png" /></a>
+			</li>
+		</ul>
+	</div><!-- entrance-end -->
+</body>
+<script type="text/javascript" src="../js/pageResponse.min.js"></script>
+<script type="text/javascript">
+	//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
+	window.onload = window.onresize = function(){
+    pageResponse({
+        selectors : '.entrance',//模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover
+        width : '320',
+        height : '504',
+    }); 
+}
+</script>
+</html>

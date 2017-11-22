@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/informationc.css">
+</head>
+<body>
+	<!-- 爱喜阅-消息 -->
+	<div class="Del_friends Message">
+		<!-- nav -->
+		<div class="nav">
+			<a class="return" href="information.html"><img src="images/arrow.png"></a>
+			<span>消息</span>
+		</div>
+		<!-- 搜索列表 -->
+		<div class="SearchList">
+			<div class="search">
+				<input type="text" name="" placeholder="搜索" />
+				<img class="Magnifier" src="images/search-icon.png" />
+			</div>
+			<div class="searList">
+				<ul>
+					<li>
+						<a class="yhtx" href="#"><img src="images/tx.jpg" /></a>
+						<a class="kf" href="#">客服1</a>
+						<a class="problem" href="#">您好！有什么问题请发消息至后台</a>
+						<span class="time">9:50</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	// 删除第一条信息边框颜色
+	// $('.searList li').first().addClass('bkqx');
+	// 搜索隐藏
+	$('.search input').keyup(function(){
+        var searchInfo = $('.search input').val();
+        if(searchInfo != ''){
+            $('.search .Magnifier').addClass('hide');
+        }else{
+            $('.search .Magnifier').removeClass('hide');
+        }
+    })
+</script>
+</html>

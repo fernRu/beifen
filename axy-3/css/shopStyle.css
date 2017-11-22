@@ -1,0 +1,315 @@
+/*公用隐藏*/
+.lright .zz,.lright .cbs,.jsxx p.jyr {white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+/*smjs*/
+.smjs {
+	background: url('../images/stay.png') no-repeat;
+	background-size: 100%;
+	position: relative;height: 100%;height: 100%;
+	min-height: 400px;
+	overflow: hidden;
+}
+/*Scan*/
+.Scan {position: relative;z-index: 9999;}
+.Scan p {color: #ffffff;font-size: 1.14em;padding:8% 0;text-align: center;}
+.Scan a {width: 40%;display: block;}
+.Scan a img {display: block;width: 100%;}
+/*tree*/
+.smjs .tree img {display: block;width: 100%;}
+/*sm_comm*/
+.sm_comm {
+	/*height: 254px;*/
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	-webkit-overflow-scroll:touch;
+}
+.more_map,.link {background: #ffffff;}
+.more_map .more,.more_map .map {padding: 0 12px;}
+.more_map .more, .more a,.more_map .map {
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+.more a {
+	float: right;
+	background: url('../images/sjt.png') no-repeat right;
+	padding-right: 14px;
+	background-size: 10px;
+}
+.more_map .map {display: block;border-top: 1px solid #f2f2f2;}
+.map .public {
+	float: left;
+	width: 76%;
+	font-size: 0.8em;
+	color: #2f2f2f;
+	line-height: 40px;
+}
+.map .gd {float: right;color: #979797;font-size: 0.74em;line-height: 40px;} 
+.link {border-top: 10px solid #f2f2f2;overflow: hidden;}
+.link li {float: left;width: 33%;/*height: 132px;*/}
+.link li a {float: left;text-align: center;/*height: 132px;*/width: 100%;padding: 12% 0;}
+.link li.wdqb {width: 34%;}
+.link li.wdqb a {border:1px solid #f2f2f2;border-width: 0 1px 0 1px;}
+.link li a img {display: block;width: 50%;/*margin-top: 22px;*/}
+.link li a span {display: block;color: #2f2f2f;line-height: 20px;margin-top: 14px;}
+.sm_comm .help {background: #000000;text-align: center;height: 32px;}
+.sm_comm .help a,.sm_comm .help span {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 0.76em;
+	line-height: 30px;
+}
+/*--------借书码LibraryCode-------*/
+.LibraryCode {}
+.nav3 {height: 44px;padding: 0 12px;overflow: hidden;}
+.nav3 .Return {float: left;}
+.nav3 .Return img {
+	float: left;
+	width: 12px;
+	height: 20px;
+	margin: 12px 6px 0 0;
+}
+.nav3 .Return span,.nav3 .grzx {color: #ffffff;line-height: 45px;}
+.nav3 .grzx {float: right;}
+/*jsm*/
+.bjk {
+	box-shadow: 0px 0px 10px 0px #000000; 
+	position: relative;
+	margin: 4px 24px 0;
+	border-radius: 6px;
+}
+.jsm {padding: 10px 0;text-align: center;}
+.jsm p {color: #ffffff;line-height: 24px;font-size: 0.94em;}
+.jsm .bt {font-size: 1.5em;line-height: 30px;}
+.jsm .ewm {display: block;text-align: center;margin-top: 4px;}
+.jsm .ewm img {width: 50%;border-radius: 4px;/*padding-top: 2%;*/}
+.ewm .images canvas {border-radius: 4px;width: 50%;background: #ffffff;padding: 6px;}
+/*LCcomm*/
+.LCcomm {}
+.LCcomm .ddjy, .LCcomm .Total {
+	/*height: 20px;*/
+	padding: 3px 0;
+	background-color:#000000;
+	background-color:rgba(0,0,0,0.2);
+	text-align: center;overflow: hidden;
+}
+.ddjy span {
+	display: block;
+	width: 74px;
+	color: #ffffff;
+	/*line-height: 20px;*/
+	padding-left: 20px;
+	background: url('../images/wait.png') no-repeat left;
+	background-size: 18px;
+}
+.LCcomm .LClink {
+	background: #ffffff;
+	display: block;
+	position: relative;
+	left: 0;
+	padding: 10px 0 0 120px;
+	min-height: 124px;
+	/*overflow: hidden;*/
+}
+.LClink .limg {position: absolute;left: 6px;width: 112px;height: 112px;}
+.LCcomm .lright {padding-right: 10px;}
+.lright .zz,.lright .cbs {height: 20px;}
+.lright span {display: block;color: #626262;font-size: 0.76em;line-height: 20px;word-break: break-all;}
+.lright span b {color: #626262;}
+.lright .sm {color: #000000;font-size: 0.94em;}
+.LCcomm .Borrow {
+	color: #00cc99;
+	/*font-size: 1.14em;*/
+	background: #ffffff;
+	text-align: center;
+	margin-top: -1px;
+	padding: 0 12px 24px 0;
+	border-radius: 0px 0px 6px 6px;
+	text-align: right;
+}
+.Borrow span {color: #00cc99;}
+.lright .sm,.lright .jsdd,.jsxx p.jsdd {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*.lright .Price,.lright .Price b {color: #ff0000;}*/
+/*空*/
+.lright span.zz i,.lright span.Price i {color: #ffffff;opacity:0;filter:Alpha(opacity=0);}
+/*还书码*/
+.LCcomm .Total {background: #000000;color: #00cc99;font-size: 1.12em;}
+.Total b,.Total span {color: #00cc99;}
+/*qxjy*/
+.qxjy {position: absolute;bottom: -18px;height: 34px;width: 100%;}
+.qxjy a {
+	color: #ffffff;
+	display: block;
+	width: 100px;
+	line-height: 30px;
+	margin: 0 auto;
+	background-color:#000000;
+	background-color:rgba(0,0,0,0.7);
+	text-align: center;
+	border-radius: 4px;
+}
+/*-----------借书成功-----------*/
+/*jsxx*/
+.jscg .jsm, .LibraryCode .jsm {padding: 10px 30px;}
+.jsxx {
+	background: #ffffff;
+	border-radius: 4px;
+	text-align: left;
+	padding: 10px;
+	margin-top: 10px;
+}
+.jsxx p {
+	text-align: left;
+	word-break: break-all;
+	color: #222222;
+	line-height: 20px;
+	padding: 5px 0;
+	font-size: 0.78em;
+}
+.jsxx p span {color: #626262;}
+.jscg .LCcomm .ddjy {background-color:#000000;background-color:rgba(0,0,0,0.2);}
+.jscg .ddjy span {
+	width: 60px;
+	color: #ffffff;
+	background: url('../images/wait3.png') no-repeat left;
+	background-size: 18px;
+}
+/*验收成功*/
+.LibraryCode .jsxx p {padding: 2px 0;}
+.yscg .LCcomm .lright,.yssb .LCcomm .lright,.jscg .LCcomm .lright {padding: 10px 10px 0 0;}
+.yscg .LCcomm .Borrow,.yscg .Borrow span {color: #000000;}
+/*损坏赔偿*/
+.LCcomm .shpc {color: #ffffff;}
+.LCcomm .shpc span,.LCcomm .shpc b,.yssb .jsm .bt {color: #ff0000;}
+.yssb .LCcomm .Borrow,.yssb .Borrow span {color: #000000;}
+/*扫码确认*/
+/*.smqr {padding: 30px 50px;position: relative;}*/
+.smqr, .StaffLogin {
+	box-shadow: 0px 0px 10px 0px #000000; 
+	position: relative;
+	margin: 16px 30px 0;
+	border-radius: 6px;
+	padding: 24px 24px 0;
+	background-color: rgba(255,255,255,0.3);
+    filter:Alpha(opacity=30);
+	min-height: 440px;
+}
+.nav4 {height: 30px;overflow: hidden;}
+.nav4 a {float: left;color: #000000;font-size: 1.2em;}
+.nav4 a.ddlb {float: right;}
+.smqr .text,.StaffLogin .text {
+	font-size: 1.3em;
+	text-align: center;
+	color:#222222; 
+	padding: 10% 0;
+}
+.ibookway,.ygsm {padding: 4% 0;}
+.ibookway img,.ygsm img {width: 62%;display: block;}
+.ygsm a {display: block;} 
+.ygsm img {width: 80%;}
+/*员工登入*/
+.StaffRegister {padding: 30px 60px 0;}
+.StaffLogin {}
+.StaffLogin .text {padding: 20px 0;}
+.StaffLogin .ConfirmLogin {margin-top: 30px;}
+.StaffLogin .Login {padding-bottom: 30px;}
+/*Login*/
+.Login {}
+.account_number, .Password {padding-top: 14px;}
+.account_number .zh,.Password .mm {
+	font-size: 1.14em;
+	padding: 0 12px;
+	line-height: 26px;
+}
+.account_number .Prompt,.Password .Prompt {
+	font-size: 0.76em;
+	padding-top: 4px;
+	text-align: right;
+	color: #ff0d20;
+	display: none;
+}
+.Login input, .validate input {
+	display: block;
+	background-color:#ffffff;
+	background-color:rgba(255,255,255,0.8);
+	border: 1px solid #ffffff;
+	line-height: 16px;
+	width: 90%;
+	padding: 10px 4%;
+}
+.register {text-align: right;padding: 6px 0;}
+.register a {font-size: 0.94em;}
+.Login .error .input-40{border:1px solid #ff0000;}
+.error-tips{margin: 5px 5px 0 0;color: red;font-size: 0.8em;}
+/*ConfirmLogin*/
+button:focus { outline: none;}
+.ConfirmLogin, .ConfirmRegister {
+	background-color:#ffffff;
+	background-color:rgba(255,255,255,0.8);
+	color: #979797;
+	display: block;
+	padding: 10px 0;
+	border: 0;
+	font-size: 1.14em;
+	width: 100%;
+	line-height: normal;
+	text-align: center;
+	border-radius: 4px;
+	margin-top: 40px;
+}
+.hover {color: #000000;background: #ffffff;}
+/*StaffRegister*/
+.StaffRegister {}
+.LoginLink {
+	display: block;
+	text-align: right;
+	color: #000000;
+	font-size: 1.12em;
+}
+.StaffRegister .text {font-size: 1.12em;text-align: center;line-height: 30px;padding-top: 6px;}
+.validate input {}
+.identifyingCode {height: 26px;text-align: right;overflow: hidden;}
+.identifyingCode button {
+	background: #ffffff;
+	color: #979797;
+	border: 0;
+	border-radius: 6px;
+	font-size: 0.94em;
+	padding: 2px 8px;
+}
+/*转借成功*/
+.LibraryCode .zjcg p {padding: 4px 0;}
+/*借书确认*/
+.jsqr {}
+.jsqr .jsxx p {padding: 8px 0;}
+.jsqr .jsm .bt {margin-top: 4px;}
+/*转借码*/
+.zjm_con {width: 180px;text-align: center;padding-bottom: 10px;}
+.zjm .text {
+	float: left;
+	width: 100px;
+	line-height: 44px;
+	color: #ffffff;
+	font-size: 1.5em;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+}
+.zjm_con .bt2 {color: #ffffff;padding: 14px 0;text-align: center;}
+/*.zjm_con .ewm {
+	background: #ffffff;
+	border-radius: 4px;
+}*/
+/*.zjm_con .images {padding: 4px 0;}*/
+.zjm_con .ewm .images canvas {width: 60%;}
+.zjm_con .txm {width: 80%;padding-top: 8px;}
+.zjm_con .txm img {display: block;width: 100%;}

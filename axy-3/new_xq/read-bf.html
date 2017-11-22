@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<style type="text/css">
+	/*看过*/
+	.read {}
+	/*pf*/
+	.c_pf ul {
+		padding-left: 0;
+		overflow: hidden;
+	}
+	.c_pf ul li {
+		float: left;
+		list-style: none;
+		width: 27px;
+		height: 27px;
+		background: url('images/stary1.png');
+	}
+	.c_pf ul li a {
+		display: block;
+		/*width: 100%;*/
+		width: 27px;
+		height: 27px;
+		overflow: hidden;
+	}
+	.c_pf ul li.light {
+		width: 27px;
+		height: 27px;
+		background: url('images/stary2.png');
+		background-size: 27px;
+	}
+</style>
+</head>
+<body>
+	<!-- ibookway-看过 -->
+	<div class="read">
+		<!-- top -->
+		<div class="read_top">
+			<a class="return" href="#"><img src="images/arrow.png" /></a>
+			<span class="kanguo">看过</span>
+		</div>
+		<!-- 评分留言 -->
+		<div class="critique">
+			<p class="c_bt">点击小花评分</p>
+			<!-- 评分小花 -->
+			<div class="c_pf">
+				<ul>
+					<!--  class="light" -->
+					<li><a href="javascript:;">1</a></li>
+					<li><a href="javascript:;">2</a></li>
+					<li><a href="javascript:;">3</a></li>
+					<li><a href="javascript:;">4</a></li>
+					<li><a href="javascript:;">5</a></li>
+				</ul>
+			</div>
+			<!-- 评价 -->
+			<p class="c_pj">评价</p>
+			<div class="c_textarea">
+				<textarea placeholder="写几句评价吧~"></textarea>
+			</div>
+			<!-- 发布按钮 -->
+			<button class="release_btn">确定发布</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	//点赞星星
+	var $num = $finalnum = $tempnum = 0;
+	var $lis = $('.c_pf ul li');
+	function fnShow(num){
+		$finalnum=num || $tempnum;
+		for (var i = 0; i < $lis.length; i++) {
+			$lis[i].className = i <$finalnum? "light" : "";
+		}
+	}
+	for (var i = 1; i <= $lis.length; i++) {
+		$lis[i - 1].index = i;
+		$lis[i - 1].onmouseover = function(){
+			fnShow(this.index);
+		}
+		$lis[i - 1].onmouseout = function(){
+			fnShow(0);
+		}
+		$lis[i - 1].onclick = function() { //鼠标点击,同时会调用onmouseout,改变tempnum值点亮星星
+			$tempnum= this.index;
+		}
+	}
+</script>
+<script>
+	// var num=finalnum = tempnum= 0;
+	// var lis = document.getElementsByTagName("li");
+	// //num:传入点亮星星的个数
+	// //finalnum:最终点亮星星的个数
+	// //tempnum:一个中间值
+	// function fnShow(num) {
+	// 	finalnum= num || tempnum;//如果传入的num为0，则finalnum取tempnum的值
+	// 	for (var i = 0; i < lis.length; i++) {
+	// 		lis[i].className = i < finalnum? "light" : "";//点亮星星就是加class为light的样式
+	// 	}
+	// }
+	// for (var i = 1; i <= lis.length; i++) {
+	// 	lis[i - 1].index = i;
+	// 	lis[i - 1].onmouseover = function() { //鼠标经过点亮星星。
+	// 		fnShow(this.index);//传入的值为正，就是finalnum
+	// 	}
+	// 	lis[i - 1].onmouseout = function() { //鼠标离开时星星变暗
+	// 		fnShow(0);//传入值为0，finalnum为tempnum,初始为0
+	// 	}
+	// 	lis[i - 1].onclick = function() { //鼠标点击,同时会调用onmouseout,改变tempnum值点亮星星
+	// 		tempnum= this.index;
+	// 	}
+	// }
+</script>
+</html>

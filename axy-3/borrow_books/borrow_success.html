@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, minimal-ui" /> -->
+<meta name="viewport" content="width=device-width,initial-scale=1,
+minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/jsm.css">
+</head>
+<body>
+	<!-- ibookway-借阅成功 -->
+	<div class="borrow_success">
+		<!-- st_nav -->
+		<div class="bbc_nav">
+			<a class="return" href="#"><img src="images/ljt.png" />
+				<span>返回</span>
+			</a>
+			<!-- 个人中心 -->
+			<a class="personal" href="#">个人中心</a>
+		</div>
+		<!-- 店铺简介 -->
+		<div class="shop_profile">
+			<img class="sp_img" src="images/portrait.jpg" />
+			<!-- 店名 -->
+			<div class="store">松江万达广场地下一层b201</div>
+			<!-- 店铺介绍 -->
+			<div class="dpjs">我是店铺介绍我是店铺介绍我是店铺介绍我是店铺介绍我是店铺介绍</div>
+			<!-- 活动 -->
+			<div class="activity">为庆祝双十二全场0.1折起！！！特大喜讯！特大喜讯！特大喜讯！特大喜讯！特大喜讯！</div>
+		</div>
+		<!-- 内容 -->
+		<div class="bbc_content">
+			<!-- 借阅成功 -->
+			<div class="bs_cont">
+				<!-- 提示 -->
+				<div class="bsc_prompt">借阅成功</div>
+				<!-- 二维码 -->
+				<div class="bsc_info">
+					<!-- 借阅人 -->
+					<div class="jyr">借阅人：<span>产品王产品王产品王产品王产品王产品王产品王产品王产品王产品王</span></div>
+					<!-- 订单号 -->
+					<div class="ddh">订单号：<span>12345678901234567890</span></div>
+					<!-- 借阅日期 -->
+					<div class="jyrq">借阅日期：<span>2017-09-11</span></div>
+					<!-- 借阅地点 -->
+					<div class="jydd">借阅地点：<span>上海市静安区光复路一号上海市静安区光复路一号上海市静安区光复路一号</span></div>
+				</div>
+			</div>
+			<!-- 借阅成功 -->
+			<div class="waitfor">
+				<img src="images/wait3.png" />
+				<span>借阅中</span>
+			</div>
+			<!-- 借书内容 -->
+			<div class="bbc_con">
+				<img class="bbc_img" src="images/img8.jpg" />
+				<!-- 书名 -->
+				<div class="bk_name">我和幸福只差一个<p>你我和幸福只差一个你我和幸福只差一个你我和幸福只差一个你</p></div>
+				<!-- 作者 -->
+				<div class="author">作者：<span>王国军</span></div>
+				<!-- 定价 -->
+				<div class="fixAprice">定价：¥<span>101.00</span></div>
+				<!-- 免费活动 -->
+				<div class="mfjy">免费借阅天数：<span>30</span>天</div>
+			</div>
+			<!-- 取消借阅 -->
+			<button class="cancel_borrow">确认</button>
+		</div><!-- bbc_content-end -->
+	</div><!-- bb_code-end -->
+</body>
+<script type="text/javascript" src="../js/pageResponse.min.js"></script>
+<script type="text/javascript">
+	//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
+	window.onload = window.onresize = function(){
+    pageResponse({
+        selectors : '.borrow_success',//模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover
+        width : '370',
+        height : '586',
+    }); 
+}
+</script>
+</html>

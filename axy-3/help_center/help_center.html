@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/help_center.css">
+</head>
+<body>
+	<!-- ibookway-帮助中心 -->
+	<div class="help_center">
+		<!-- top -->
+		<div class="hc_nav">
+			<a class="return" href="#"><img src="../images/arrow.png" /></a>
+			<span class="hcn_txt">帮助中心</span>
+		</div>
+		<!-- 待归还内容 -->
+		<div class="hc_cont">
+			<!--  -->
+			<ul>
+				<!-- 智能书柜借书 -->
+				<li class="hccSel">
+					<!-- 标题 -->
+					<div class="hcc_bt"><b>&bull;</b>智能书柜借书</div>
+					<!-- 内容-步骤 -->
+					<div class="hcc_step">
+						<p>1.您可以在上方搜索栏搜索您想看到的书籍，书籍详情页有书籍所在位置的详细信息，或者选择离您最近的智能书柜查看有哪些书籍。</p>
+						<p>2.来到您所要借书的智能书柜面前。</p>
+						<p>3.使用页面下方扫码借书按钮，扫描您所要借的书籍的书柜的柜门上的二维码，系统将为您开柜。</p>
+						<p>4.如您无法直观看到想要书籍也可直接在搜索栏搜索该书籍，进入详情页，点击立即借阅开门。</p>
+						<p>5.取走书籍后请关好柜门。</p>
+					</div>
+				</li>
+				<!-- 书店借书 -->
+				<li>
+					<!-- 标题 -->
+					<div class="hcc_bt"><b>&bull;</b>书店借书</div>
+					<!-- 内容-步骤 -->
+					<div class="hcc_step">
+						<p>1.您可以在上方搜索栏搜索您想看到的书籍，书籍详情页有书籍所在位置的详细信息，或者选择智慧书房板块查看离您最近的书店有哪些书籍。</p>
+						<p>2.来到书店拿到您想借阅的书籍后，扫描书本后面ibookway二维码，进入书本详情。</p>
+						<p>3.点击立即借阅，系统将自动为你生成借书码。</p>
+						<p>4.将书本拿给店员确认后，店员扫描您的借书码确认后，即借阅成功。</p>
+					</div>
+				</li>
+				<!-- 智能书柜“扫码还书” -->
+				<li>
+					<!-- 标题 -->
+					<div class="hcc_bt"><b>&bull;</b>智能书柜“扫码还书”</div>
+					<!-- 内容-步骤 -->
+					<div class="hcc_step">
+						<p>1.点击同城-智能书柜，系统将为您匹配到离您最近的智能书柜。</p>
+						<p>2.来到智能书柜。</p>
+						<p>3.扫码还书：点击首页右上角“扫码还书”，扫描智能书柜上方KT板的还书码，智能书柜将随机打开一个空柜，请确认归还书籍，将所借书放入空柜。</p>
+						<p>4.关好柜门，即为归还成功。我们将在24小时内对您归还的图书进行验收。</p>
+					</div>
+				</li>
+				<!-- 书店还书 -->
+				<li>
+					<!-- 标题 -->
+					<div class="hcc_bt"><b>&bull;</b>书店还书</div>
+					<!-- 内容-步骤 -->
+					<div class="hcc_step">
+						<p>1.点击同城-智慧书房，系统将为您匹配到离您最近的书店。</p>
+						<p>2.在借阅订单中点击“立即还书”。</p>
+						<p>3.选择“书店还书”，系统将自动生成还书码。</p>
+						<p>4.将书籍拿到书店给店员，店员验书hoist扫描您的还书码即还书成功。</p>
+					</div>
+				</li>
+			</ul>
+		</div><!-- hc_cont-end -->
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	//筛选
+	$(function(){
+		$(".hc_cont li").bind("click",function(){
+			$(this).addClass("hccSel").siblings().removeClass("hccSel");
+		})
+	});
+</script>
+</html>

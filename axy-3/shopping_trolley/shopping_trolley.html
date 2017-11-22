@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="css/shopping_trolley.css">
+</head>
+<body>
+	<!-- ibookway-购物车 -->
+	<div class="shopping_trolley">
+		<!-- st_nav -->
+		<div class="st_nav">
+			<a class="return" href="#"><img src="../images/arrow.png" /></a>
+			<span class="gwc_txt">购物车</span>
+		</div>
+		<!-- 内容 -->
+		<div class="st_content">
+			<!-- 筛选&提示 -->
+			<div class="stc_screen">
+				<span class="yxsp">已选商品</span>
+				<a class="empty" href="javascript:void(0);">清空</a>
+			</div>
+			<ul class="commodity">
+				<li class="">
+					<label class="commSel" for="check">
+						<input id="check" type="checkbox" name="item" value="" checked="checked" />
+						<img class="comm_img" src="images/img8.jpg" />
+						<p class="comm_name">恋爱的潘多拉恋爱的潘多拉</p>
+						<p class="comm_zz">作者：<span>产品王</span></p>
+						<i class="yuan"></i>
+					</label>
+					<!-- 借阅费 -->
+					<div class="borrow_fee">
+						<span class="jyf">借阅费</span>
+						<span class="jy_price">¥<b>1.00</b>/天</span>
+						<span class="illustrate">(免费借阅30天，超期正常扣费)</span>
+					</div>
+				</li>
+				<li>
+					<label for="check2">
+						<img class="comm_img" src="images/img8.jpg" />
+						<p class="comm_name">恋爱的潘多拉222222dddddddddddd</p>
+						<p class="comm_zz">作者：<span>产品王</span></p>
+						<i class="yuan"></i>
+						<input id="check2" type="checkbox" name="item" value="" />
+					</label>
+					<!-- 借阅费 -->
+					<div class="borrow_fee">
+						<span class="jyf">借阅费</span>
+						<span class="jy_price">¥<b>1.00</b>/天</span>
+						<span class="illustrate">(免费借阅30天，超期正常扣费)</span>
+					</div>
+				</li>
+			</ul>
+		</div><!-- shopping_trolley-end -->
+		<!-- 确认结算 -->
+		<button class="settle_accounts">确认结算</button>
+	</div><!-- shopping_trolley-end -->
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	//
+	// $('.commodity li label').click(function(){
+	// 	$(this).addClass('commSel').siblings().removeClass('commSel');
+	// 	// $(this).addClass('commSel').siblings().removeClass('commSel');
+	// });
+	// $('.commodity li').click(function(){
+	// 	$(this).addClass('commSel').siblings().removeClass('.commSel');
+	// });
+	// $('.commodity li').on( function() {
+ //        //$('.tools').removeClass('show')
+ //        $(this).parents(this).siblings().removeClass("commSel");
+ //        $(this).parents(this).toggleClass('commSel')
+ //    })
+	$(function(){
+	    $(".commodity li label").bind("click",function(){
+	        // $(".commodity li").hasClass("commSel")?$(this).removeClass("commSel"):$(this).addClass("commSel");
+	        $(".commodity li").addClass("commSel").siblings().removeClass('commSel');
+	    })
+	})
+</script>
+</html>

@@ -1,0 +1,99 @@
+body {background: #f2f2f2;}
+/*带归还书籍dghsj*/
+/*dghsj*/
+/*dgh_nav*/
+.dgh_nav {height: 44px;padding: 0 12px;background: #ffffff;text-align: center;overflow: hidden;}
+.dgh_nav .return {float: left;width: 12px;padding-top: 12px;}
+.dgh_nav .return img {display: block;width: 12px;}
+.dgh_nav .dghn_txt {display: block;font-size: 1.13em;line-height: 44px;padding-right: 12px;}
+/*dgh_cont*/
+.dgh_cont {padding-bottom: 36px;}
+.dgh_cont li {
+	background: #ffffff;
+	margin-top: 5px;
+	padding: 0 12px;
+	position: relative;
+}
+.dgh_cont li label {display: block;}
+.dgh_cont .dghCon {padding: 16px 70px 16px 96px;min-height: 84px;}
+.dghCon .dc_img {
+	position: absolute;
+	left: 12px;
+	top: 16px;
+	width: 84px;
+	height: 84px;
+	overflow: hidden;
+}
+.dghCon .dc_name,.dghCon .price {
+	word-break: break-all;
+	font-size: 0.94em;
+	color: #323232;
+	line-height: 24px;
+}
+.dghCon .price,.dghCon .price b {color: #979797;}
+/*dc_jg*/
+.dgh_cont .dgh_radio,.dghCon .dc_jg {
+	position: absolute;
+	right: 12px;
+	top: 16px;
+}
+.dc_jg span {
+	display: block;
+	text-align: right;
+	color: #323232;
+	font-size: 0.75em;
+	line-height: 24px;
+}
+.dc_jg span.day_num,.dc_jg span.day_num b {color: #878787;}
+.dc_jg span.day_num b {font-size: 0.7em;}
+/*dgh_radio*/
+.dgh_cont .dgh_radio {
+	top: 70px;
+	width: 26px;
+	height: 26px;
+	background: url('../images/yuan1.png') no-repeat;
+	background-size: 26px;
+   text-align: center;
+   cursor: pointer;
+}
+.dgh_cont .dgh_radio input {display: block;width: 24px;height: 24px;}
+.dgh_cont .dgi_sel .dgh_radio{
+   background: url('../images/yuan2.png') no-repeat;
+   background-size: 26px;
+}
+.dgh_cont .dgh_radio input{
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+    filter:alpha(opacity=0);
+}
+/**/
+.dgh_cont li .total {
+	border-top: 1px solid #eeeeee;
+	height: 36px;
+	text-align: right;
+	line-height: 36px;
+	overflow: hidden;
+}
+.dgh_cont li .total span {color: #323232;font-size: 0.94em;}
+.dgh_cont li .total span.t_day {padding-right: 10px;}
+/*qrgh*/
+.qrgh,.no_order .no_ljjy {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	outline: none;
+	border: 0;
+	background: #00cc99;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	font-size: 1.13em;
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+}
+/*无订单no_order*/
+.no_order {padding-top: 16%;}
+.no_order .no_img {display: block;width: 50%;}
+.no_order .no_txt {font-size: 1.13em;padding-top: 24px;text-align: center;}

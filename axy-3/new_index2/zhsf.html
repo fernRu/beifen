@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="" name="viewport">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, minimal-ui" />
+<title>ibookway</title>
+<link rel="stylesheet" type="text/css" href="css/publicIndex.css">
+<link rel="stylesheet" type="text/css" href="css/zhsf.css" />
+</head>
+<body>
+	<!-- ibookway-智慧书房 -->
+	<div class="zhsf">
+		<!-- 头部分内容 -->
+		<div class="header">
+			<!-- 切换城市 -->
+			<div class="xzcs">
+				<div class="switch">
+					<a class="value" data-belong="value">上海</a>
+				</div>
+				<div class="xz" style="display: none;">
+					<a class="value" data-belong="value" href="#" value="上海" >上海</a>
+					<a class="value" data-belong="value" href="#" value="北京">北京</a>
+				</div>
+			</div>
+			<!-- 搜索 -->
+			<div class="search">
+				<input type="text" name="" placeholder="请输入书名、点名、作者" />
+			</div>
+			<!-- 扫码还书 -->
+			<div class="smhs">
+				<a href="javascript:void(0);"><img class="img" src="images/smhs.png" /></a>
+				<span>立即归还</span>
+			</div>
+			<!-- 消息提醒 -->
+			<!-- <div class="tidings"><a href="#"><b></b></a></div> -->
+		</div>
+		<!-- nr -->
+		<div class="zh_zn">
+			<!-- 切换 -->
+			<div class="bookSel">
+				<ul>
+					<li class="selTab"><a href="javascript:void(0);">智慧书房</a></li>
+					<li><a href="javascript:void(0);">智能书柜</a></li>
+				</ul>
+			</div>
+			<!-- banner -->
+			<div class="banner" style="display: ;"><img src="images/banner.jpg"></div>
+			<!-- 智慧书房&智能书柜 -->
+			<div class="changeCont">
+				<!-- 智慧书房 -->
+				<div class="scrollload-container CLlink">
+					<ul class="scrollload-content"></ul>
+				</div><!-- CLlink-end -->
+				<!-- 智能书柜 -->
+				<div class="znsg" style="display: none;">
+					<ul>
+						<li>
+							<a class="shop" href="#">
+								<img src="../images/ssj.png" />
+								<span>百联全球商业互联网科创中心百联全球商业互联网科创中心（NO：01)</span>
+							</a>
+							<a class="Location" href="#">
+								<img src="../images/ditu.png" />
+								<span>上海市静安区光复路1号四行仓库百百联全球商业互联网科创中心</span>
+								<b class="distance">>0.2km</b>
+							</a>
+						</li>
+						<li>
+							<a class="shop" href="#">
+								<img src="../images/ssj.png" />
+								<span>百联全球商业互联网科创中心百联全球商业互联网科创中心（NO：01)</span>
+							</a>
+							<a class="Location" href="#">
+								<img src="../images/ditu.png" />
+								<span>上海市静安区光复路1号四行仓库百百联全球商业互联网科创中心</span>
+								<b class="distance">>0.2km</b>
+							</a>
+						</li>
+						<li>
+							<a class="shop" href="#">
+								<img src="../images/ssj.png" />
+								<span>百联全球商业互联网科创中心百联全球商业互联网科创中心（NO：01)</span>
+							</a>
+							<a class="Location" href="#">
+								<img src="../images/ditu.png" />
+								<span>上海市静安区光复路1号四行仓库百百联全球商业互联网科创中心</span>
+								<b class="distance">>0.2km</b>
+							</a>
+						</li>
+					</ul>
+				</div><!-- znsg-end -->
+			</div><!-- changeCont-end -->
+		</div>
+		<!-- 尾部内容 -->
+		<div class="footer">
+			<ul>
+				<li class="ftSel"><a class="dd_borrow" href="zhsf.html"><b></b><span>线下网点</span></a></li>
+				<li class="smjs"><a class="sys" href="#"><b></b><span>扫码借书</span></a></li>
+				<li><a class="immediate_return" href="personal.html"><b></b><span>我</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 弹窗 -->
+	<div class="popupT hide">
+		<div class="pop_bk">
+			<p class="dh" id="dh">ddddddddddd</p>
+			<a class="call" id="call" href="">呼叫</a>
+			<a class="cancel" href="javascript:void(0);">取消</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/switch.js"></script>
+<script type="text/javascript" src="js/zhsf.js"></script>
+<script type="text/javascript" src="lib/Scrollload.js"></script>
+<!-- <script type="text/javascript" src="js/out5.js"></script> -->
+<script type="text/javascript">
+	let page = 1
+	new Scrollload({
+      // container 和 content 两个配置的默认取的scrollload-container和scrollload-content类的dom。只要你按照以上的dom结构写，这两个配置是可以省略的
+      container: document.querySelector('.scrollload-container'),
+    content: document.querySelector('.scrollload-content'),
+    loadMore: function(sl) {
+        
+        if (page > 1) {
+          // 没有数据的时候需要调用noMoreData
+            sl.noMoreData()
+            return
+        }
+        console.log(page);
+
+        // 我这里用jquery的不是因为需要jquery，只是jquery的语法看起来比较简单。大家都认识。
+        // 如果你不是用jquery，可以看看原生的insertAdjacentHTML方法来替代append
+        $.ajax({
+            type: 'GET',
+            url: 'test.php',
+            dataType: 'json',
+            success: function(data){
+            		page = page + 1;
+            		console.log(data);
+					var str = "";
+					for (i in data) {
+						str += '<li>';
+						str += '<a href="#">';
+						str += '<img class="img" src="images/img9.jpg" />'
+						str += '<p class="store">' + data[i].name + '</p>';
+						str += '<p class="Location">'+'<img src="../images/ditu.png" />' + data[i].dz + '</p>';
+						str += '<p class="km">' + data[i].juli + '</p>';
+						str += '</a>';
+						str += '<div class="Telephone">';
+						str += '<span class="yysj">' + '营业时间' + '</span>';
+						str += '<span class="time">' + '9:00~21:00' + '</span>';
+						str += '<b>' + '|' + '</b>';
+						str += '<a class="lxwm" href="#" data-name="2222222222">' + '联系我们' + '</a>';
+						str += '</div>';
+						str += '</li>';
+					}
+                // contentDom其实就是你的scrollload-content类的dom
+                $(sl.contentDom).append(str)
+
+                // 处理完业务逻辑后必须要调用unlock
+                sl.unLock()
+            },
+            error: function(xhr, type){
+                // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+                sl.throwException()
+            }
+        })
+    },
+    // 你也可以关闭下拉刷新
+    enablePullRefresh: false,
+    pullRefresh: function (sl) {
+    	if(page == 6){
+    		return false;
+    	}
+        $.ajax({
+            type: 'GET',
+            url: 'test.php',
+            dataType: 'json',
+            success: function(data){
+            	console.log(data);
+                $(sl.contentDom).prepend(data)
+
+                // 处理完业务逻辑后必须要调用refreshComplete
+                sl.refreshComplete()
+            }
+        })
+    }
+})
+</script>
+</html>
